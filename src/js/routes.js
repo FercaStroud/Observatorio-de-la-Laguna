@@ -9,6 +9,8 @@ import DynamicRoutePage from '../pages/dynamic-route.vue';
 import RequestAndLoad from '../pages/request-and-load.vue';
 import NotFoundPage from '../pages/404.vue';
 
+import NewsPage from '../pages/news.vue';
+
 var routes = [
   {
     path: '/',
@@ -22,7 +24,10 @@ var routes = [
     path: '/form/',
     component: FormPage,
   },
-
+  {
+    path: '/news/',
+    component: NewsPage,
+  },
   {
     path: '/left-page-1/',
     component: LeftPage1,
