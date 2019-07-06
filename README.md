@@ -8,10 +8,11 @@ Framework7 app created with following options:
 {
   "cwd": "/Users/fernandocardenas/Projects/Observatorio-de-la-Laguna",
   "type": [
+    "web",
     "cordova"
   ],
   "name": "Observatorio de la Laguna",
-  "pkg": "go.observatoriodelalaguna",
+  "pkg": "go.observatorio",
   "framework": "vue",
   "template": "split-view",
   "cssPreProcessor": "scss",
@@ -37,8 +38,8 @@ Framework7 app created with following options:
     "inlineAssets": true
   },
   "theming": {
-    "customColor": false,
-    "color": "#007aff",
+    "customColor": true,
+    "color": "#4593a9",
     "darkTheme": false,
     "iconFonts": true,
     "fillBars": false

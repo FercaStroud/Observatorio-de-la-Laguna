@@ -1,20 +1,20 @@
 // Import Vue
 import Vue from 'vue';
-
-// Import Framework7
 import Framework7 from 'framework7/framework7.esm.bundle.js';
-
-// Import Framework7-Vue Plugin
 import Framework7Vue from 'framework7-vue/framework7-vue.esm.bundle.js';
-
-// Import Framework7 Styles
 import 'framework7/css/framework7.bundle.css';
 
-// Import Icons and App Custom Styles
 import '../css/icons.css';
 import '../css/app.scss';
-// Added by me jeje
-import '../css/styles.scss';
+import Vuex from 'vuex'
+import createPersistedState from 'vuex-persistedstate';
+import vueResource from 'vue-resource'
+import Ripple from 'vue-ripple-directive'
+
+Ripple.color = 'rgba(255, 255, 255, 0.35)';
+Ripple.zIndex = 55;
+Vue.directive('ripple', Ripple);
+
 
 // Import App Component
 import App from '../components/app.vue';

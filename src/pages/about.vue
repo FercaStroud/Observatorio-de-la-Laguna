@@ -1,6 +1,16 @@
 <template>
   <f7-page name="about">
-    <f7-navbar title="About" back-link="Back"></f7-navbar>
+      <!-- Top Navbar -->
+      <f7-navbar :sliding="false" no-shadow no-hairline style="background-color: transparent">
+        <!--<f7-nav-title>-->
+        <!--</f7-nav-title>-->
+        <f7-nav-right>
+          <f7-link icon-ios="f7:menu" icon-aurora="f7:menu" icon-md="material:menu" panel-open="right"></f7-link>
+        </f7-nav-right>
+      </f7-navbar>
+      <!-- Toolbar-->
+
+      <f7-navbar title="About" back-link="Back"></f7-navbar>
     <f7-block-title>About My App</f7-block-title>
     <f7-block strong>
       <p>Fugiat perspiciatis excepturi, soluta quod non ullam deleniti. Nobis sint nemo consequuntur, fugiat. Eius perferendis animi autem incidunt vel quod tenetur nostrum, voluptate omnis quasi quidem illum consequuntur, a, quisquam.</p>
