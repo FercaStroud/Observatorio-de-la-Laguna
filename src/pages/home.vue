@@ -3,14 +3,14 @@
         <!-- Top Navbar -->
         <f7-navbar :sliding="false" >
             <f7-nav-left>
+                <img style="height: 40px;margin-left: 8px" src="../assets/images/logo-sin-texto.png">
+            </f7-nav-left>
+            <f7-nav-right>
                 <f7-link icon-ios="f7:menu"
                          icon-aurora="f7:menu"
                          icon-md="material:menu"
                          panel-open="left">
                 </f7-link>
-            </f7-nav-left>
-            <f7-nav-right>
-                <img style="height: 40px;margin-right: 8px" src="../assets/images/logo-sin-texto.png">
             </f7-nav-right>
         </f7-navbar>
 
@@ -99,7 +99,5 @@
         font-size: 13px;
         color: #8e8e93;
     }
-    .bw-logo-bg{
-        background-image: url("../assets/images/logo-sin-texto.jpg");
-    }
+    
 </style>

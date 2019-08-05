@@ -4,56 +4,75 @@
         <f7-statusbar></f7-statusbar>
 
         <!-- Right panel with reveal effect-->
-        <f7-panel left cover>
+        <f7-panel right cover>
             <f7-view>
                 <f7-page style="background-color: white">
                     <f7-block>
                         <img style="width: 100%;" src="../assets/images/observatorio-logo-completo.png"/>
                     </f7-block>
-                    <f7-card v-ripple class="menu-card" style="background-color: #ed1c8e">
-                        <f7-card-content>
-                            <f7-row>
-                                <f7-col>
-                                    <span class="menu-text">NOTICIAS</span>
-                                </f7-col>
-                                <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
-                            </f7-row>
-                        </f7-card-content>
-                    </f7-card>
-
-                    <f7-card v-ripple class="menu-card" style="background-color: #39b777">
-                        <f7-card-content>
-                            <f7-row>
-                                <f7-col>
-                                    <span class="menu-text">INDICADORES</span>
-                                </f7-col>
-                                <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
-                            </f7-row>
-                        </f7-card-content>
-                    </f7-card>
-
-                    <f7-card v-ripple class="menu-card" style="background-color: #f99b40">
-                        <f7-card-content>
-                            <f7-row>
-                                <f7-col>
-                                    <span class="menu-text">PERCEPCIÓN</span>
-                                </f7-col>
-                                <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
-                            </f7-row>
-                        </f7-card-content>
-                    </f7-card>
-
-                    <f7-card v-ripple class="menu-card" style="background-color: #4593a9">
-                        <f7-card-content>
-                            <f7-row>
-                                <f7-col>
-                                    <span class="menu-text">BLOG</span>
-                                </f7-col>
-                                <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
-                            </f7-row>
-                        </f7-card-content>
-                    </f7-card>
-
+                    <f7-link style="width: 100%" href="/news/" view=".view-main" panel-close>
+                        <f7-card v-ripple class="menu-card"
+                                 style="background-color: #ed1c8e; width: 100%">
+                            <f7-card-content>
+                                <f7-row>
+                                    <f7-col>
+                                        <span class="menu-text">NOTICIAS</span>
+                                    </f7-col>
+                                    <f7-col>
+                                        <img class="icon-navbar" src="../assets/images/logo-sin-texto.png">
+                                    </f7-col>
+                                </f7-row>
+                            </f7-card-content>
+                        </f7-card>
+                    </f7-link>
+                    <f7-link style="width: 100%" href="/" view=".view-main" panel-close>
+                        <f7-card v-ripple class="menu-card" style="background-color: #39b777; width: 100%">
+                            <f7-card-content>
+                                <f7-row>
+                                    <f7-col>
+                                        <span class="menu-text">INDICADORES</span>
+                                    </f7-col>
+                                    <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
+                                </f7-row>
+                            </f7-card-content>
+                        </f7-card>
+                    </f7-link>
+                    <f7-link style="width: 100%" href="/" view=".view-main" panel-close>
+                        <f7-card v-ripple class="menu-card" style="background-color: #f99b40; width: 100%">
+                            <f7-card-content>
+                                <f7-row>
+                                    <f7-col>
+                                        <span class="menu-text">PERCEPCIÓN</span>
+                                    </f7-col>
+                                    <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
+                                </f7-row>
+                            </f7-card-content>
+                        </f7-card>
+                    </f7-link>
+                    <f7-link style="width: 100%" href="/" view=".view-main" panel-close>
+                        <f7-card v-ripple class="menu-card" style="background-color: #4593a9; width: 100%">
+                            <f7-card-content>
+                                <f7-row>
+                                    <f7-col>
+                                        <span class="menu-text">BLOG</span>
+                                    </f7-col>
+                                    <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
+                                </f7-row>
+                            </f7-card-content>
+                        </f7-card>
+                    </f7-link>
+                    <f7-link style="width: 100%" href="/" view=".view-main" panel-close>
+                        <f7-card v-ripple class="menu-card" style="background-color: #757476; width: 100%">
+                            <f7-card-content>
+                                <f7-row>
+                                    <f7-col>
+                                        <span class="menu-text">ENCUESTA</span>
+                                    </f7-col>
+                                    <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
+                                </f7-row>
+                            </f7-card-content>
+                        </f7-card>
+                    </f7-link>
                     <f7-block-title>Datos de Contacto</f7-block-title>
                     <f7-block>
                         <p>
@@ -84,17 +103,19 @@
 <style scoped lang="scss">
     $icon-size: 35px;
     $menu-text-size: 1.2em;
-    .menu-text{
+    .menu-text {
         font-weight: bold;
         font-size: $menu-text-size;
         color: white;
     }
+
     .icon-navbar {
         width: $icon-size;
         height: $icon-size;
         float: right;
     }
-    .menu-card{
+
+    .menu-card {
         border-radius: 0;
     }
 
@@ -146,7 +167,9 @@
             }
         },
         methods: {
-
+            goTo() {
+                console.log('cloick');
+            }
         },
         mounted() {
             this.$f7ready((f7) => {
