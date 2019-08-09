@@ -113,6 +113,8 @@
         width: $icon-size;
         height: $icon-size;
         float: right;
+        padding: 7px;
+        background-color: white;
     }
 
     .menu-card {

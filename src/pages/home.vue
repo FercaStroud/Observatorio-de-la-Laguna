@@ -3,7 +3,7 @@
         <!-- Top Navbar -->
         <f7-navbar :sliding="false" >
             <f7-nav-left>
-                <img style="height: 40px;margin-left: 8px" src="../assets/images/logo-sin-texto.png">
+                <img style="height: 35px;margin-top:-4px;margin-left: 8px" src="../assets/images/logo-sin-texto.png">
             </f7-nav-left>
             <f7-nav-right>
                 <f7-link icon-ios="f7:menu"
@@ -14,9 +14,8 @@
             </f7-nav-right>
         </f7-navbar>
 
-
         <f7-block-title>Desde nuestro Blog</f7-block-title>
-        <f7-card class="" v-for="(item, index) in items" :key="index">
+        <f7-card class="elevation-2" v-for="(item, index) in items" :key="index">
             <f7-card-header class="no-border card-header">
                 <div class="" style="float: left;">
                     <img src="../assets/images/logo-sin-texto.png" width="34" height="34"/>
@@ -99,5 +98,5 @@
         font-size: 13px;
         color: #8e8e93;
     }
-    
+
 </style>

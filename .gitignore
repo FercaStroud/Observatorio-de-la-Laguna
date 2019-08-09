@@ -14,7 +14,7 @@ pids
 
 # Dependency directories
 node_modules/
-api/vendor
+
 # Optional npm cache directory
 .npm
 
@@ -35,7 +35,6 @@ api/vendor
 Thumbs.db
 
 # Cordova
-cordova/platforms/
 cordova/plugins/
 cordova/www/
 

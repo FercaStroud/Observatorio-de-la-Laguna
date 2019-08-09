@@ -6,7 +6,7 @@
   "repository": "",
   "license": "UNLICENSED",
   "framework7": {
-    "cwd": "C:\\Users\\ferca\\Projects\\Observatorio-de-la-Laguna",
+    "cwd": "/Users/fernandocardenas/Projects/Observatorio-de-la-Laguna",
     "type": [
       "cordova"
     ],
@@ -38,7 +38,7 @@
     },
     "theming": {
       "customColor": true,
-      "color": "#4693a9",
+      "color": "#4593a9",
       "darkTheme": false,
       "iconFonts": true,
       "fillBars": false
@@ -93,8 +93,8 @@
     "copy-webpack-plugin": "^5.0.4",
     "cpy-cli": "^2.0.0",
     "cross-env": "^5.2.0",
-    "css-loader": "^3.1.0",
-    "file-loader": "^4.1.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
@@ -103,15 +103,15 @@
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "rimraf": "^2.6.3",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "terser-webpack-plugin": "^1.3.0",
+    "sass-loader": "^7.2.0",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^1.4.1",
     "url-loader": "^2.1.0",
     "vue-loader": "^15.7.1",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.10",
-    "webpack": "^4.38.0",
+    "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^3.8.0"
   }
 }
