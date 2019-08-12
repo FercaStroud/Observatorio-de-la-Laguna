@@ -1,5 +1,5 @@
 import HomePage from '../pages/home.vue';
-import NewsPage from '../pages/news.vue';
+import SurveyPage from '../pages/survey.vue';
 import NotFoundPage from '../pages/404.vue';
 
 let routes = [
@@ -8,9 +8,9 @@ let routes = [
     component: HomePage,
   },
   {
-    path: '/news',
-    name: 'news',
-    component: NewsPage,
+    path: '/survey',
+    name: 'survey',
+    component: SurveyPage,
     //component: () => import('../pages/news.vue'),
   },
   // {

@@ -10,7 +10,7 @@
                     <f7-block>
                         <img style="width: 100%;" src="../assets/images/observatorio-logo-completo.png"/>
                     </f7-block>
-                    <f7-link style="width: 100%" href="/news/" view=".view-main" panel-close>
+                    <f7-link style="width: 100%" @click="getPostBy('NOTICIAS')" panel-close>
                         <f7-card v-ripple class="menu-card"
                                  style="background-color: #ed1c8e; width: 100%">
                             <f7-card-content>
@@ -25,7 +25,7 @@
                             </f7-card-content>
                         </f7-card>
                     </f7-link>
-                    <f7-link style="width: 100%" href="/" view=".view-main" panel-close>
+                    <f7-link style="width: 100%" @click="getPostBy('INDICADORES')" panel-close>
                         <f7-card v-ripple class="menu-card" style="background-color: #39b777; width: 100%">
                             <f7-card-content>
                                 <f7-row>
@@ -37,7 +37,7 @@
                             </f7-card-content>
                         </f7-card>
                     </f7-link>
-                    <f7-link style="width: 100%" href="/" view=".view-main" panel-close>
+                    <f7-link style="width: 100%" @click="getPostBy('PERCEPCION')" panel-close>
                         <f7-card v-ripple class="menu-card" style="background-color: #f99b40; width: 100%">
                             <f7-card-content>
                                 <f7-row>
@@ -49,7 +49,7 @@
                             </f7-card-content>
                         </f7-card>
                     </f7-link>
-                    <f7-link style="width: 100%" href="/" view=".view-main" panel-close>
+                    <f7-link style="width: 100%" @click="getPostBy('BLOG')" panel-close>
                         <f7-card v-ripple class="menu-card" style="background-color: #4593a9; width: 100%">
                             <f7-card-content>
                                 <f7-row>
@@ -61,7 +61,7 @@
                             </f7-card-content>
                         </f7-card>
                     </f7-link>
-                    <f7-link style="width: 100%" href="/" view=".view-main" panel-close>
+                    <f7-link style="width: 100%" href="/survey" view=".view-main" panel-close>
                         <f7-card v-ripple class="menu-card" style="background-color: #757476; width: 100%">
                             <f7-card-content>
                                 <f7-row>
@@ -168,11 +168,6 @@
                 password: '',
             }
         },
-        methods: {
-            goTo() {
-                console.log('cloick');
-            }
-        },
         mounted() {
             this.$f7ready((f7) => {
                 // Init cordova APIs (see cordova-app.js)
@@ -181,6 +176,27 @@
                 }
                 // Call F7 APIs here
             });
+        },
+        methods: {
+            getPostBy(arg) {
+                this.$f7.dialog.preloader('Cargando Datos');
+                this.$http.get(this.$store.state.application.config.api + 'news', {
+                    postType: arg
+                }).then(response => {
+                    // get body data
+                    console.log(response)
+                    this.items = response.body;
+                    if (this.items.length == 0) {
+                        this.$f7.dialog.alert(' ', 'Sin datos disponibles');
+                    }
+                    this.$f7.dialog.close();
+                }, response => {
+                    this.$f7.dialog.alert(' ', 'Servidor no disponible');
+                    // error callback
+                    console.log(response, 'error on getPostBy');
+                    this.$f7.dialog.close();
+                });
+            },
         }
     }
 </script>
