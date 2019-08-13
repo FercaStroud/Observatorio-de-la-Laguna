@@ -18,7 +18,7 @@
         </f7-navbar>
 
         <f7-block-title>{{title}}</f7-block-title>
-        <f7-card class="elevatlon-2" v-for="(item, index) in $store.state.application.postItems" :key="index">
+        <f7-card class="elevatlon-2" v-for="(item, index) in $store.state.application.tempPostItems" :key="index">
             <f7-card-header class="no-border card-header">
                 <div class="" style="float: left;">
                     <img src="../assets/images/logo-sin-texto.png" width="34" height="34"/>
@@ -33,10 +33,15 @@
                      width="100%"/>
             </f7-card-content>
             <f7-card-footer class="no-border">
-                <f7-link>Ver más</f7-link>
+                <f7-link :href="item.post_url" external>Ver más</f7-link>
                 <f7-link>Compartir</f7-link>
             </f7-card-footer>
         </f7-card>
+        <f7-button style="margin-bottom: 20px;margin-top: 20px"
+                   v-if="$store.state.application.postItems.length !== $store.state.application.tempPostItems.length"
+        @click="loadMoreItems">
+            Cargar más...
+        </f7-button>
     </f7-page>
 </template>
 
@@ -54,11 +59,44 @@
         mounted: function () {
         },
         methods: {
-
+            loadMoreItems(){
+                this.setLastAndNextValues(
+                    this.$store.state.application.nextItemIndex,
+                    this.$store.state.application.nextItemIndex += 15
+                )
+                this.limitPost()
+            },
+            resetLastAndNextValues(){
+                this.$store.state.application.lastItemIndex = null;
+                this.$store.state.application.nextItemIndex = null;
+            },
+            setLastAndNextValues(last, next){
+                this.$store.state.application.lastItemIndex = last;
+                this.$store.state.application.nextItemIndex = next;
+            },
+            limitPost() {
+                this.$f7.dialog.preloader('Cargando Datos');
+                for (
+                    let i = this.$store.state.application.lastItemIndex;
+                    i < this.$store.state.application.nextItemIndex; i++
+                ) {
+                    if (this.$store.state.application.postItems[i] !== undefined) {
+                        this.$store.state.application.tempPostItems.push(
+                            this.$store.state.application.postItems[i]
+                        )
+                    }
+                }
+                this.$f7.dialog.close();
+            }
         }
     }
 </script>
 
+<style>
+    iframe{
+        width: 100% !important;
+    }
+</style>
 <style scoped>
     .card-header {
         display: block;

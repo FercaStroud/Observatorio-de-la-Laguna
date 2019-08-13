@@ -162,10 +162,6 @@
                         androidOverlaysWebView: false,
                     },
                 },
-
-                // Login screen data
-                username: '',
-                password: '',
             }
         },
         mounted() {
@@ -180,13 +176,15 @@
         methods: {
             getPostBy(arg) {
                 this.$f7.dialog.preloader('Cargando Datos');
-                this.$http.get(this.$store.state.application.config.api + 'news', {
+                this.$http.post(this.$store.state.application.config.api + 'posts', {
                     postType: arg
                 }).then(response => {
-                    // get body data
-                    console.log(response)
-                    this.items = response.body;
-                    if (this.items.length == 0) {
+                    this.$store.state.application.postItems = response.body;
+
+                    this.$store.state.application.lastItemIndex = 0;
+                    this.$store.state.application.nextItemIndex = 15;
+                    this.limitPost();
+                    if (this.$store.state.application.postItems.length === 0) {
                         this.$f7.dialog.alert(' ', 'Sin datos disponibles');
                     }
                     this.$f7.dialog.close();
@@ -197,6 +195,28 @@
                     this.$f7.dialog.close();
                 });
             },
+            resetLastAndNextValues(){
+                this.$store.state.application.lastItemIndex = null;
+                this.$store.state.application.nextItemIndex = null;
+            },
+            setLastAndNextValues(last, next){
+                this.$store.state.application.lastItemIndex = last;
+                this.$store.state.application.nextItemIndex = next;
+            },
+            limitPost() {
+                this.$f7.dialog.preloader('Cargando Datos');
+                for (
+                    let i = this.$store.state.application.lastItemIndex;
+                    i < this.$store.state.application.nextItemIndex; i++
+                ) {
+                    if (this.$store.state.application.postItems[i] !== undefined) {
+                        this.$store.state.application.tempPostItems.push(
+                            this.$store.state.application.postItems[i]
+                        )
+                    }
+                }
+                this.$f7.dialog.close();
+            }
         }
     }
 </script>

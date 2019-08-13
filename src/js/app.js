@@ -36,20 +36,13 @@ const store = new Vuex.Store({
           right: false,
           login: true,
         },
-        postItems: [
-         /*{
-              post_id: 2,
-              post_author: "Observatorio de La Laguna",
-              post_title: "Sistema de Derecho confiable y objetivo en Gómez Palacio 2016",
-              post_content: 'Durante 2016 el objetivo y el <strong>sistema de derecho confiable</strong> destacan a nivel nacional las ciudades de Campeche, Aguascalientes y Saltillo en los primeros 3 lugares respectivamente. <strong>Gómez Palacio</strong> muestra un nivel medio bajo, llegando al lugar<strong> 42</strong> de 78. <h5><span lang="ES-MX">Fuente: IMCO, Índice de competitividad urbana 2016, subíndice Sistema de derecho confiable y eficiente. Este indicador considera, duración juicio de amparo directos, número de notarios, superficie urbana en tierra ejidal autos robados, muertes por homicidio, monto de robo de mercancías y percepción de inseguridad.</span></h5>',
-              post_date: "2018-05-03 03:34:19",
-              post_url: "http://observatoriodelalaguna.org.mx/?p=559",
-              post_type: "",
-              post_mime_type: "",
-          },*/
-        ],
+        lastItemIndex: null,
+        nextItemIndex: null,
+        tempPostItems:[], //
+        postItems: [], // all post / no limit
         config: {
-          api: 'https://app.observatoriodelalaguna.org.mx/public/',
+          //api: 'https://app.observatoriodelalaguna.org.mx/public/',
+          api: 'http://localhost:8000/',
         },
       },
       mutations: {
