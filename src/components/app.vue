@@ -165,13 +165,16 @@
             }
         },
         mounted() {
+            let vm = this
             this.$f7ready((f7) => {
                 // Init cordova APIs (see cordova-app.js)
                 if (f7.device.cordova) {
                     cordovaApp.init(f7);
+                    vm.getPostBy('BLOG');
                 }
                 // Call F7 APIs here
             });
+
         },
         methods: {
             getPostBy(arg) {
@@ -179,6 +182,7 @@
                 this.$http.post(this.$store.state.application.config.api + 'posts', {
                     postType: arg
                 }).then(response => {
+                    this.$store.state.application.tempPostItems = []
                     this.$store.state.application.postItems = response.body;
 
                     this.$store.state.application.lastItemIndex = 0;

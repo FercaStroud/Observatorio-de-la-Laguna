@@ -23,7 +23,6 @@ Vue.use(Vuex)
 Vue.use(vueResource)
 Framework7.use(Framework7Vue);
 
-
 const store = new Vuex.Store({
   plugins: [createPersistedState()],
   modules: {
@@ -42,7 +41,8 @@ const store = new Vuex.Store({
         postItems: [], // all post / no limit
         config: {
           //api: 'https://app.observatoriodelalaguna.org.mx/public/',
-          api: 'http://localhost:8000/',
+          //api: 'http://localhost:8000/',
+          api: 'http://192.168.2.112/public/',
         },
       },
       mutations: {

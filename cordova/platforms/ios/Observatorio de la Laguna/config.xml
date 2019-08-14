@@ -99,4 +99,16 @@
     <preference name="Allow3DTouchLinkPreview" value="false" />
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="StatusBarOverlaysWebView" value="true" />
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="UIInAppBrowser">
+        <param name="ios-package" value="CDVUIInAppBrowser" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="WKInAppBrowser">
+        <param name="ios-package" value="CDVWKInAppBrowser" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>
