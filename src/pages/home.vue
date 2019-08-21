@@ -40,7 +40,7 @@
                         Ver más
                     </f7-button>
                 </f7-link>
-                <f7-link popover-open=".popover-social-links" @click="setDataToShare(item)">COMPARTIR</f7-link>
+                <f7-link popover-open=".popover-social-links" @click="setDataToShare(item)">Compartir</f7-link>
             </f7-card-footer>
         </f7-card>
         <f7-button style="margin-bottom: 20px;margin-top: 20px"

@@ -2,20 +2,741 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3a4f02-f16f-4922-8e1f-03bdf05b04ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/APP KEYS/GoogleService-Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/xcuserdata/ferca.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/xcuserdata/ferca.xcuserdatad/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/xcuserdata/ferca.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/GoogleService-Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/Plugins/cordova-plugin-firebase-messaging/AppDelegate+FirebaseMessagingPlugin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/Plugins/cordova-plugin-firebase-messaging/AppDelegate+FirebaseMessagingPlugin.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/Plugins/cordova-plugin-firebase-messaging/FirebaseMessagingPlugin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/Plugins/cordova-plugin-firebase-messaging/FirebaseMessagingPlugin.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Podfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Firebase/CoreOnly/Sources/Firebase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Firebase/CoreOnly/Sources/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Firebase/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FIRAnalyticsConnector.framework/FIRAnalyticsConnector" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FIRAnalyticsConnector.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/FirebaseAnalytics" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseCoreDiagnostics.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalyticsInterop/Interop/Analytics/Public/FIRAnalyticsInterop.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalyticsInterop/Interop/Analytics/Public/FIRAnalyticsInteropListener.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalyticsInterop/Interop/Analytics/Public/FIRInteropEventNames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalyticsInterop/Interop/Analytics/Public/FIRInteropParameterNames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalyticsInterop/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseAnalyticsInterop/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRAnalyticsConfiguration.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRApp.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRAppAssociationRegistration.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRBundleUtil.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRComponent.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRComponentContainer.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRComponentType.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRConfiguration.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRDependency.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRErrors.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRLogger.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIROptions.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/FIRVersion.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRAnalyticsConfiguration.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRAppAssociationRegistration.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRAppInternal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRBundleUtil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainerInternal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentType.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRConfigurationInternal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRDependency.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRErrorCode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRErrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRLibrary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIROptionsInternal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Private/FIRVersion.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseCore/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRIMessageCode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceID+Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceID+Private.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceID.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDAPNSInfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDAPNSInfo.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDAuthKeyChain.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDAuthKeyChain.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDAuthService.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDAuthService.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDBackupExcludedPlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDBackupExcludedPlist.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinPreferences+Internal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinPreferences+Internal.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinPreferences.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinPreferences.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinPreferences_Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinService.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinService.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinStore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinStore.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCombinedHandler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCombinedHandler.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDConstants.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDConstants.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDDefines.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPair.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPair.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPairStore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPairStore.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPairUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPairUtilities.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeychain.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeychain.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDLogger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDLogger.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDStore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDStore.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDStringEncoding.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDStringEncoding.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenDeleteOperation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenDeleteOperation.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenFetchOperation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenFetchOperation.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenInfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenInfo.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenManager.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenOperation+Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenOperation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenOperation.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenStore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenStore.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDURLQueryItem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDURLQueryItem.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDUtilities.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDVersionUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDVersionUtilities.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/NSError+FIRInstanceID.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/NSError+FIRInstanceID.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/Private/FIRInstanceID_Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/Public/FIRInstanceID.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/Public/FirebaseInstanceID.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseInstanceID/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMMessageCode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessaging.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingAnalytics.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingAnalytics.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingClient.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingClient.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingCodedInputStream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingCodedInputStream.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingConnection.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingConnection.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingConstants.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingConstants.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingContextManagerService.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingContextManagerService.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingDataMessageManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingDataMessageManager.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingDefines.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingDelayedMessageQueue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingDelayedMessageQueue.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingExtensionHelper.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingLogger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingLogger.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPacketQueue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPacketQueue.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPendingTopicsList.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPendingTopicsList.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPersistentSyncMessage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPersistentSyncMessage.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPubSub.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPubSub.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPubSubRegistrar.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPubSubRegistrar.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingReceiver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingReceiver.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingRemoteNotificationsProxy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingRemoteNotificationsProxy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingRmq2PersistentStore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingRmq2PersistentStore.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingRmqManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingRmqManager.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingSecureSocket.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingSecureSocket.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingSyncMessageManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingSyncMessageManager.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingTopicOperation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingTopicOperation.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingTopicsCommon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingUtilities.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingVersionUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingVersionUtilities.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessaging_Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/FirebaseMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/InternalHeaders/FIRMessagingInternalUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/NSDictionary+FIRMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/NSDictionary+FIRMessaging.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/NSError+FIRMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/NSError+FIRMessaging.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/Protos/GtalkCore.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/Protos/GtalkCore.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/Protos/GtalkExtensions.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/Protos/GtalkExtensions.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/Public/FIRMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/Public/FIRMessagingExtensionHelper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/Firebase/Messaging/Public/FirebaseMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/FirebaseMessaging/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleAppMeasurement/Frameworks/GoogleAppMeasurement.framework/GoogleAppMeasurement" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleAppMeasurement/Frameworks/GoogleAppMeasurement.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/GULAppDelegateSwizzler.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Internal/GULAppDelegateSwizzler_Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Private/GULAppDelegateSwizzler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Private/GULApplication.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Common/GULLoggerCodes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Logger/GULLogger.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Logger/Private/GULLogger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GULLoggerLevel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/GULSwizzler.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Private/GULOriginalIMPConvenienceMacros.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Private/GULSwizzler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/NSData+zlib/GULNSData+zlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/NSData+zlib/GULNSData+zlib.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Network/GULMutableDictionary.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Network/GULNetwork.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Network/GULNetworkConstants.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Network/GULNetworkURLSession.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULMutableDictionary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetwork.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkConstants.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkLoggerProtocol.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkMessageCode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Network/Private/GULNetworkURLSession.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Reachability/GULReachabilityChecker+Internal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Reachability/GULReachabilityChecker.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Reachability/Private/GULReachabilityChecker.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/Reachability/Private/GULReachabilityMessageCode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/GULUserDefaults.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Private/GULUserDefaults.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/GoogleUtilities/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Firebase/Firebase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseAnalyticsInterop/FIRAnalyticsInterop.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseAnalyticsInterop/FIRAnalyticsInteropListener.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseAnalyticsInterop/FIRInteropEventNames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseAnalyticsInterop/FIRInteropParameterNames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRAnalyticsConfiguration.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRApp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRAppAssociationRegistration.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRAppInternal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRBundleUtil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRComponentContainer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRComponentContainerInternal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRComponentType.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRConfiguration.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRConfigurationInternal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRDependency.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRErrorCode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRErrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRLibrary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRLogger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRLoggerLevel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIROptions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIROptionsInternal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FIRVersion.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseCore/FirebaseCore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRIMessageCode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceID+Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceID.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDAPNSInfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDAuthKeyChain.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDAuthService.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDBackupExcludedPlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDCheckinPreferences+Internal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDCheckinPreferences.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDCheckinPreferences_Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDCheckinService.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDCheckinStore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDCombinedHandler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDConstants.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDDefines.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDKeyPair.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDKeyPairStore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDKeyPairUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDKeychain.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDLogger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDStore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDStringEncoding.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDTokenDeleteOperation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDTokenFetchOperation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDTokenInfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDTokenManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDTokenOperation+Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDTokenOperation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDTokenStore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDURLQueryItem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceIDVersionUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FIRInstanceID_Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/FirebaseInstanceID.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseInstanceID/NSError+FIRInstanceID.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMMessageCode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingAnalytics.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingClient.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingCodedInputStream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingConnection.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingConstants.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingContextManagerService.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingDataMessageManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingDefines.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingDelayedMessageQueue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingExtensionHelper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingInternalUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingLogger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingPacketQueue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingPendingTopicsList.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingPersistentSyncMessage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingPubSub.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingPubSubRegistrar.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingReceiver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingRemoteNotificationsProxy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingRmq2PersistentStore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingRmqManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingSecureSocket.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingSyncMessageManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingTopicOperation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingTopicsCommon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessagingVersionUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FIRMessaging_Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/FirebaseMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/GtalkCore.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/GtalkExtensions.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/NSDictionary+FIRMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/FirebaseMessaging/NSError+FIRMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULAppDelegateSwizzler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULAppDelegateSwizzler_Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULAppEnvironmentUtil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULApplication.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULLogger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULLoggerCodes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULLoggerLevel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULMutableDictionary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULNSData+zlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULNetwork.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULNetworkConstants.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULNetworkLoggerProtocol.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULNetworkMessageCode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULNetworkURLSession.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULOriginalIMPConvenienceMacros.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULReachabilityChecker+Internal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULReachabilityChecker.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULReachabilityMessageCode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULSwizzler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/GoogleUtilities/GULUserDefaults.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/Any.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/Api.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/Duration.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/Empty.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/FieldMask.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBArray.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBArray_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBBootstrap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBCodedInputStream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBCodedInputStream_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBCodedOutputStream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBCodedOutputStream_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBDescriptor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBDescriptor_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBDictionary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBDictionary_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBExtensionInternals.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBExtensionRegistry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBMessage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBMessage_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBProtocolBuffers.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBProtocolBuffers_RuntimeSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBRootObject.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBRootObject_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBRuntimeTypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBUnknownField.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBUnknownFieldSet.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBUnknownFieldSet_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBUnknownField_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBUtilities_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBWellKnownTypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/GPBWireFormat.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/SourceContext.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/Struct.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/Timestamp.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/Type.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/Protobuf/Wrappers.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/nanopb/pb.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/nanopb/pb_common.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/nanopb/pb_decode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Private/nanopb/pb_encode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Firebase/Firebase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseAnalyticsInterop/FIRAnalyticsInterop.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseAnalyticsInterop/FIRAnalyticsInteropListener.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseAnalyticsInterop/FIRInteropEventNames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseAnalyticsInterop/FIRInteropParameterNames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseCore/FIRApp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseCore/FIROptions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseCore/FirebaseCore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseInstanceID/FIRInstanceID.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseMessaging/FIRMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseMessaging/FIRMessagingExtensionHelper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/FirebaseMessaging/FirebaseMessaging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/GoogleUtilities/GULLoggerCodes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/GoogleUtilities/GULLoggerLevel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/GoogleUtilities/GULNSData+zlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/Any.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/Api.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/Duration.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/Empty.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/FieldMask.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBArray.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBArray_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBBootstrap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBCodedInputStream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBCodedInputStream_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBCodedOutputStream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBCodedOutputStream_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBDescriptor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBDescriptor_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBDictionary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBDictionary_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBExtensionInternals.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBExtensionRegistry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBMessage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBMessage_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBProtocolBuffers.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBProtocolBuffers_RuntimeSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBRootObject.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBRootObject_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBRuntimeTypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBUnknownField.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBUnknownFieldSet.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBUnknownFieldSet_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBUnknownField_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBUtilities_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBWellKnownTypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/GPBWireFormat.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/SourceContext.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/Struct.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/Timestamp.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/Type.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/Protobuf/Wrappers.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/nanopb/pb.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/nanopb/pb_common.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/nanopb/pb_decode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Headers/Public/nanopb/pb_encode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Manifest.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/Firebase.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/FirebaseAnalytics.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/FirebaseAnalyticsInterop.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/FirebaseCore.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/FirebaseInstanceID.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/FirebaseMessaging.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/GoogleAppMeasurement.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/GoogleUtilities.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/Pods-Observatorio de la Laguna.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/Protobuf.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/nanopb.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Pods.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBArray.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBArray.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBArray_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBBootstrap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBCodedInputStream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBCodedInputStream.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBCodedInputStream_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBCodedOutputStream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBCodedOutputStream.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBCodedOutputStream_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBDescriptor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBDescriptor.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBDescriptor_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBDictionary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBDictionary.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBDictionary_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBExtensionInternals.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBExtensionInternals.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBExtensionRegistry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBExtensionRegistry.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBMessage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBMessage.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBMessage_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBProtocolBuffers.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBProtocolBuffers_RuntimeSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBRootObject.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBRootObject.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBRootObject_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBRuntimeTypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBUnknownField.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBUnknownField.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBUnknownFieldSet.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBUnknownFieldSet.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBUnknownFieldSet_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBUnknownField_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBUtilities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBUtilities.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBUtilities_PackagePrivate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBWellKnownTypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBWellKnownTypes.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBWireFormat.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/GPBWireFormat.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Api.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Api.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Duration.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Duration.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Empty.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Empty.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/FieldMask.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/FieldMask.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/SourceContext.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/SourceContext.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Timestamp.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Timestamp.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Wrappers.pbobjc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Protobuf/objectivec/google/protobuf/Wrappers.pbobjc.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/Firebase/Firebase.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/FirebaseAnalytics/FirebaseAnalytics.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/FirebaseAnalyticsInterop/FirebaseAnalyticsInterop.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/FirebaseCore/FirebaseCore-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/FirebaseCore/FirebaseCore.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/FirebaseInstanceID/FirebaseInstanceID-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/FirebaseInstanceID/FirebaseInstanceID.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/FirebaseMessaging/FirebaseMessaging-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/FirebaseMessaging/FirebaseMessaging.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/GoogleAppMeasurement/GoogleAppMeasurement.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/GoogleUtilities/GoogleUtilities-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/GoogleUtilities/GoogleUtilities-prefix.pch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/GoogleUtilities/GoogleUtilities.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/Pods-Observatorio de la Laguna/Pods-Observatorio de la Laguna-acknowledgements.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/Pods-Observatorio de la Laguna/Pods-Observatorio de la Laguna-acknowledgements.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/Pods-Observatorio de la Laguna/Pods-Observatorio de la Laguna-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/Pods-Observatorio de la Laguna/Pods-Observatorio de la Laguna.debug.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/Pods-Observatorio de la Laguna/Pods-Observatorio de la Laguna.release.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/Protobuf/Protobuf-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/Protobuf/Protobuf-prefix.pch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/Protobuf/Protobuf.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/nanopb/nanopb-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/nanopb/nanopb-prefix.pch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/Target Support Files/nanopb/nanopb.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/nanopb/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/nanopb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/nanopb/pb.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/nanopb/pb_common.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/nanopb/pb_common.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/nanopb/pb_decode.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/nanopb/pb_decode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/nanopb/pb_encode.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cordova/platforms/ios/Pods/nanopb/pb_encode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cordova/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cordova/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/android/android.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/xml/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/xml/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/platform_www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/android/platform_www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/cordova.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/BuildHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CallbackMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaBridge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaClientCertRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaDialogsHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaHttpAuthHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterfaceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPreferences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/CoreAndroid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/ExposedJsApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaClientCertRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaCookieManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaHttpAuthHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/PermissionHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/PluginResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/ResumeCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemCookieManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemExposedJsApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebChromeClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/android.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/java/observatoriodelalaguna/org/mx/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/java/org/apache/cordova/inappbrowser/InAppBrowser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/java/org/apache/cordova/inappbrowser/InAppBrowserDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/java/org/apache/cordova/inappbrowser/InAppChromeClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/java/org/apache/cordova/labs/keyboard/Keyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/java/org/apache/cordova/splashscreen/SplashScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/java/org/apache/cordova/statusbar/StatusBar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/java/org/apache/cordova/whitelist/WhitelistPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-hdpi/ic_action_next_item.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-hdpi/ic_action_previous_item.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-hdpi/ic_action_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-land-hdpi/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-land-mdpi/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-land-xhdpi/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-land-xxhdpi/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-land-xxxhdpi/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-mdpi/ic_action_next_item.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-mdpi/ic_action_previous_item.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-mdpi/ic_action_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-port-hdpi/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-port-mdpi/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-port-xxhdpi/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-port-xxxhdpi/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-xhdpi/ic_action_next_item.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-xhdpi/ic_action_previous_item.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-xhdpi/ic_action_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-xxhdpi/ic_action_next_item.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-xxhdpi/ic_action_previous_item.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/drawable-xxhdpi/ic_action_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/mipmap-ldpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/xml/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/Api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/android_sdk_version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/android_sdk_version.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/build.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/check_reqs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/check_reqs.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/clean" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/clean.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/defaults.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/Adb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/AndroidManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/AndroidProject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/android_sdk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/builders/ProjectBuilder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/builders/builders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/check_reqs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/config/GradlePropertiesParser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/device.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/emulator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/getASPath.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/install-device" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/install-device.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/install-emulator" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/install-emulator.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/list-devices" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/list-devices.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/list-emulator-images" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/list-emulator-images.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/list-started-emulators" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/list-started-emulators.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/log.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/plugin-build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/pluginHandlers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/prepare.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/retry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/run.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/start-emulator" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/lib/start-emulator.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/log.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/loggingHelper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/run.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/cordova/version.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/platform_www/cordova-js-src/android/nativeapiprovider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/platform_www/cordova-js-src/android/promptbasednativeapi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/platform_www/cordova-js-src/exec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/platform_www/cordova-js-src/platform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/platform_www/cordova-js-src/plugin/android/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/platform_www/cordova.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/platform_www/cordova_plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/android/wrapper.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/CordovaLib/CordovaLib.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/CordovaLib/CordovaLib.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/fernandocardenas.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/xcshareddata/xcschemes/Observatorio de la Laguna.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/xcshareddata/xcschemes/Observatorio de la Laguna.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/xcuserdata/fernandocardenas.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/xcuserdata/fernandocardenas.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/Entitlements-Debug.plist" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/Entitlements-Debug.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/Entitlements-Release.plist" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/Entitlements-Release.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/Observatorio de la Laguna-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/Observatorio de la Laguna-Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/ios.json" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/ios.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/platform_www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/platform_www/cordova_plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/pods-debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/pods-debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/pods-release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/pods-release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/pods.json" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/pods.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/survey.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/survey.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,98 +746,13 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/api/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/app.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#f7-block#0;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-link#0;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-card#0;n#f7-link#0;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-link#1;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-card#0;n#f7-link#1;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-link#2;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-card#0;n#f7-link#2;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-link#3;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-card#0;n#f7-link#3;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-link#4;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-card#0;n#f7-link#4;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-button#0;n#p#1;n#f7-block#1;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-button#0;n#p#2;n#f7-block#1;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/home.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-              <folding>
-                <element signature="n#style#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#f7-nav-left#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#f7-nav-left#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#f7-card-header#0;n#f7-card#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-button#0;n#f7-card-footer#0;n#f7-card#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-button#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-button#0;n#f7-list-item#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-button#0;n#f7-list-item#1;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-button#0;n#f7-list-item#2;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-              <folding>
-                <element signature="e#14#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="7" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -125,39 +761,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>application</find>
-      <find>clear</find>
-      <find>blo</find>
-      <find>por</find>
-      <find>COMpa</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/css/app.scss" />
-        <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/cordova/config.xml" />
-        <option value="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/xml/config.xml" />
-        <option value="$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/xml/network_security_config.xml" />
-        <option value="$PROJECT_DIR$/cordova/platforms/android/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/api/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/js/routes.js" />
-        <option value="$PROJECT_DIR$/api/bootstrap/app.php" />
-        <option value="$PROJECT_DIR$/api/app/Http/Middleware/CorsMiddleware.php" />
-        <option value="$PROJECT_DIR$/api/.env" />
-        <option value="$PROJECT_DIR$/src/js/app.js" />
-        <option value="$PROJECT_DIR$/src/pages/home.vue" />
-        <option value="$PROJECT_DIR$/api/routes/web.php" />
-        <option value="$PROJECT_DIR$/src/components/app.vue" />
-      </list>
-    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -237,67 +842,7 @@
       <path value="$PROJECT_DIR$/api/vendor/symfony/yaml" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="107" />
-    <option name="y" value="111" />
-    <option name="width" value="1659" />
-    <option name="height" value="1198" />
-  </component>
   <component name="ProjectId" id="1P1EswwF8YM1YGghrdHerimUGsA" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Observatorio-de-la-Laguna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Observatorio-de-la-Laguna" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Observatorio-de-la-Laguna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Observatorio-de-la-Laguna" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Observatorio-de-la-Laguna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Observatorio-de-la-Laguna" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Observatorio-de-la-Laguna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Observatorio-de-la-Laguna" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Observatorio-de-la-Laguna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Observatorio-de-la-Laguna" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Observatorio-de-la-Laguna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Observatorio-de-la-Laguna" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Observatorio-de-la-Laguna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Observatorio-de-la-Laguna" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -314,14 +859,15 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/images" />
     </key>
   </component>
@@ -357,45 +903,14 @@
       <workItem from="1565408957947" duration="3744000" />
       <workItem from="1565643358791" duration="7627000" />
       <workItem from="1565747028811" duration="8595000" />
+      <workItem from="1566240520644" duration="249000" />
+      <workItem from="1566240794275" duration="275000" />
+      <workItem from="1566246007037" duration="717000" />
+      <workItem from="1566251059245" duration="354000" />
+      <workItem from="1566275107658" duration="119000" />
+      <workItem from="1566323262288" duration="7200000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25920000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="107" y="111" width="1659" height="1198" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49819168" visible="true" weight="0.18243662" />
-      <window_info id="Structure" order="1" sideWeight="0.5013575" side_tool="true" weight="0.18939884" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50180835" side_tool="true" weight="0.18243662" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -416,12 +931,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -442,176 +951,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/cordova-app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/404.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cordova/platforms/android/CordovaLib/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cordova/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/xml/network_security_config.xml" />
-    <entry file="file://$PROJECT_DIR$/cordova/platforms/android/app/src/main/res/xml/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="62" column="58" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cordova/platforms/android/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cordova/plugins/cordova-plugin-statusbar/.jshintrc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/survey.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/app/Http/Middleware/CorsMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bootstrap/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="66" column="52" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-          <folding>
-            <element signature="e#14#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/app.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#f7-block#0;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-card#0;n#f7-link#0;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#1;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-card#0;n#f7-link#1;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#2;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-card#0;n#f7-link#2;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#3;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-card#0;n#f7-link#3;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#4;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-card#0;n#f7-link#4;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-button#0;n#p#1;n#f7-block#1;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-button#0;n#p#2;n#f7-block#1;n#f7-page#0;n#f7-view#0;n#f7-panel#0;n#f7-app#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#f7-nav-left#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#f7-nav-left#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#f7-card-header#0;n#f7-card#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-button#0;n#f7-card-footer#0;n#f7-card#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-button#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-button#0;n#f7-list-item#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-button#0;n#f7-list-item#1;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-button#0;n#f7-list-item#2;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

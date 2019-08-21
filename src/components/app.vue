@@ -10,7 +10,7 @@
                     <f7-block>
                         <img style="width: 100%;" src="../assets/images/observatorio-logo-completo.png"/>
                     </f7-block>
-                    <f7-link style="width: 100%" @click="getPostBy('NOTICIAS')" panel-close>
+                    <!--<f7-link style="width: 100%" @click="getPostBy('NOTICIAS')" panel-close>
                         <f7-card v-ripple class="menu-card"
                                  style="background-color: #ed1c8e; width: 100%">
                             <f7-card-content>
@@ -24,7 +24,7 @@
                                 </f7-row>
                             </f7-card-content>
                         </f7-card>
-                    </f7-link>
+                    </f7-link>-->
                     <f7-link style="width: 100%" @click="getPostBy('INDICADORES')" panel-close>
                         <f7-card v-ripple class="menu-card" style="background-color: #39b777; width: 100%">
                             <f7-card-content>
@@ -61,18 +61,18 @@
                             </f7-card-content>
                         </f7-card>
                     </f7-link>
-                    <f7-link style="width: 100%" href="/survey" view=".view-main" panel-close>
+                    <!--<f7-link style="width: 100%" href="/survey" view=".view-main" panel-close>
                         <f7-card v-ripple class="menu-card" style="background-color: #757476; width: 100%">
                             <f7-card-content>
                                 <f7-row>
                                     <f7-col>
-                                        <span class="menu-text">ENCUESTA</span>
+                                        <span class="menu-text">ENCUESTAS</span>
                                     </f7-col>
                                     <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
                                 </f7-row>
                             </f7-card-content>
                         </f7-card>
-                    </f7-link>
+                    </f7-link>-->
                     <f7-block-title>Datos de Contacto</f7-block-title>
                     <f7-block>
                         <p>

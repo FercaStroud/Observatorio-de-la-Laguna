@@ -13,14 +13,15 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "cordova-android": "^8.0.0",
     "cordova-ios": "^5.0.1",
+    "cordova-plugin-firebase-messaging": "^3.0.0",
     "cordova-plugin-inappbrowser": "^3.1.0",
     "cordova-plugin-keyboard": "^1.2.0",
     "cordova-plugin-splashscreen": "^5.0.3",
     "cordova-plugin-statusbar": "^2.4.3",
     "cordova-plugin-wkwebview-engine": "^1.2.1",
-    "cordova-plugin-wkwebview-file-xhr": "^2.1.1"
+    "cordova-plugin-wkwebview-file-xhr": "^2.1.1",
+    "cordova-support-android-plugin": "^1.0.1"
   },
   "cordova": {
     "plugins": {
@@ -29,11 +30,11 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-wkwebview-file-xhr": {},
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-inappbrowser": {}
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-firebase-messaging": {}
     },
     "platforms": [
-      "ios",
-      "android"
+      "ios"
     ]
   },
   "devDependencies": {

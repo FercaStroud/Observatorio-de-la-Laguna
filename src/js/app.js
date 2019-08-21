@@ -40,9 +40,9 @@ const store = new Vuex.Store({
         tempPostItems:[], //
         postItems: [], // all post / no limit
         config: {
-          //api: 'https://app.observatoriodelalaguna.org.mx/public/',
+          api: 'https://app.observatoriodelalaguna.org.mx/api/public/',
           //api: 'http://localhost:8000/',
-          api: 'http://192.168.2.112/public/',
+          //api: 'http://192.168.1.73/public/',
         },
       },
       mutations: {
