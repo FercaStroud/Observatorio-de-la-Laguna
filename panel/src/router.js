@@ -15,12 +15,27 @@ export default new Router({
     {
       path: '/encuesta/nueva',
       name: 'surveyAdd',
-      component: () => import('./views/surveys/add.vue')
+      component: () => import('./components/surveys/add.vue')
     },
     {
       path: '/login',
       name: 'loginPage',
       component: () => import('./views/Login.vue')
-    }
+    },
+      {
+          path: '/encuesta/lista',
+          name: 'surveyList',
+          component: () => import('./components/surveys/list.vue')
+      },
+      {
+          path: '/noticia/nueva',
+          name: 'newsAdd',
+          component: () => import('./components/news/add.vue')
+      },
+      {
+          path: '/noticia/lista',
+          name: 'newsList',
+          component: () => import('./components/news/list.vue')
+      }
   ]
 })

@@ -1,8 +1,8 @@
 <template>
     <section style="margin-top: 20px">
-        <div class="md-layout md-gutter">
+        <div class="md-layout">
             <div class="md-layout-item md-size-25"
-                 style="margin-left:40px; padding-bottom: 20px; background-color: white; border-radius: 9px;">
+                 style="padding-bottom: 20px; background-color: white; border-radius: 9px;">
                 <md-field>
                     <label>Nombre de Usuario</label>
                     <md-input v-model="type"></md-input>
