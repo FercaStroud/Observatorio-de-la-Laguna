@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "206936322713",
+    "firebase_url": "https://observatoriodelalagunaorgmx.firebaseio.com",
+    "project_id": "observatoriodelalagunaorgmx",
+    "storage_bucket": "observatoriodelalagunaorgmx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206936322713:android:b3366502a6e271bc",
+        "android_client_info": {
+          "package_name": "observatoriodelalaguna.org.mx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206936322713-kucd24je3j3r5v9ttp10mqqi6ukcubnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe6UYE2mAaFvtn3oW6_jzsVCa6DTJaxAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206936322713-kucd24je3j3r5v9ttp10mqqi6ukcubnt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "206936322713-h33j9m1q1oflj73ll3vi78ih02b9ffq4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "observatoriodelalaguna.org.mx",
+                "app_store_id": "1476130520"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
