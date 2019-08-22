@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color: #0c82df">
+    <div style="background-color: #ffffff">
         <md-menu md-align-trigger>
             <md-button md-menu-trigger>Encuestas</md-button>
 
@@ -7,40 +7,29 @@
                 <md-menu-item>
                     <router-link to="/encuesta/nueva/">Nueva Encuesta</router-link>
                 </md-menu-item>
-                <md-menu-item>My Item 2</md-menu-item>
-                <md-menu-item>My Item 3</md-menu-item>
+                <md-menu-item>
+                    <router-link to="/encuesta/lista/">Ver todas las encuestas</router-link>
+                </md-menu-item>
             </md-menu-content>
         </md-menu>
 
         <md-menu md-align-trigger>
-            <md-button md-menu-trigger>Lorem Ipsum</md-button>
+            <md-button md-menu-trigger>Noticias</md-button>
 
             <md-menu-content>
-                <md-menu-item>My Item 1</md-menu-item>
-                <md-menu-item>My Item 2</md-menu-item>
-                <md-menu-item>My Item 3</md-menu-item>
+                <md-menu-item>
+                    <router-link to="/noticia/nueva/">Nueva Noticia</router-link>
+                </md-menu-item>
+                <md-menu-item>
+                    <router-link to="/noticia/lista/">Ver todas las noticias</router-link>
+                </md-menu-item>
             </md-menu-content>
         </md-menu>
 
         <md-menu md-align-trigger>
-            <md-button md-menu-trigger>Lorem Ipsum</md-button>
-
-            <md-menu-content>
-                <md-menu-item>My Item 1</md-menu-item>
-                <md-menu-item>My Item 2</md-menu-item>
-                <md-menu-item>My Item 3</md-menu-item>
-            </md-menu-content>
+            <md-button md-menu-trigger>Cerrar sesión</md-button>
         </md-menu>
 
-        <md-menu md-align-trigger>
-            <md-button md-menu-trigger>Lorem Ipsum</md-button>
-
-            <md-menu-content>
-                <md-menu-item>My Item 1</md-menu-item>
-                <md-menu-item>My Item 2</md-menu-item>
-                <md-menu-item>My Item 3</md-menu-item>
-            </md-menu-content>
-        </md-menu>
     </div>
 </template>
 
