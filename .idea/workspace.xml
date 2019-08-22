@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3a4f02-f16f-4922-8e1f-03bdf05b04ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/panel/src/assets/scss/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panel/src/components/Navigator.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panel/src/views/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panel/src/views/surveys/add.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/news.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panel/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/panel/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/panel/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panel/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/panel/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panel/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/panel/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panel/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/panel/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panel/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/panel/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/survey.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/survey.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -196,7 +182,7 @@
       <workItem from="1566323262288" duration="7328000" />
       <workItem from="1566406858314" duration="920000" />
       <workItem from="1566417757783" duration="301000" />
-      <workItem from="1566438660322" duration="3839000" />
+      <workItem from="1566438660322" duration="10548000" />
     </task>
     <servers />
   </component>
