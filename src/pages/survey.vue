@@ -1,7 +1,9 @@
 <template>
     <f7-page class="bw-logo-bg" style="background-color: white;">
         <f7-navbar title="Encuestas" back-link="Atrás"></f7-navbar>
-        <f7-block-title>Encuestas</f7-block-title>
+        <f7-block-title style="color:#398fa9; font-weight: bold">
+            Encuestas
+        </f7-block-title>
 
         <f7-block>
             <f7-button outline large v-for="(survey, index) in surveys" :key="index"

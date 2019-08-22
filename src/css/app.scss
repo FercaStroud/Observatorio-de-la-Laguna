@@ -58,3 +58,11 @@
 .navbar:before, .navbar:after {
   content: none !important;
 }
+
+a{
+  color: black !important;
+}
+
+div.title, a.link.back,.ios .navbar a.icon-only {
+  color: #e74b7e !important;
+}

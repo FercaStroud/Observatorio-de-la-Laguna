@@ -3,6 +3,13 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+
+import './assets/scss/styles.scss'
+
+Vue.use(VueMaterial)
+
 Vue.config.productionTip = false
 
 new Vue({

@@ -1,5 +1,6 @@
 import HomePage from '../pages/home.vue';
 import SurveyPage from '../pages/survey.vue';
+import NewsPage from '../pages/news.vue';
 import NotFoundPage from '../pages/404.vue';
 
 let routes = [
@@ -11,12 +12,12 @@ let routes = [
     path: '/survey',
     name: 'survey',
     component: SurveyPage,
-    //component: () => import('../pages/news.vue'),
   },
-  // {
-  //   path: '/dynamic-route/blog/:blogId/post/:postId/',
-  //   component: DynamicRoutePage,
-  // },
+  {
+    path: '/news',
+    name: 'news',
+    component: NewsPage,
+  },
   {
     path: '(.*)',
     component: NotFoundPage,

@@ -18,7 +18,9 @@
             </f7-nav-right>
         </f7-navbar>
 
-        <f7-block-title>{{title}}</f7-block-title>
+        <f7-block-title style="color:#398fa9; font-weight: bold">
+           {{title}}
+        </f7-block-title>
         <f7-card class="elevation-4" v-for="(item, index) in $store.state.application.tempPostItems" :key="index">
             <f7-card-header class="no-border card-header">
                 <div class="" style="float: left;">
@@ -76,7 +78,7 @@
         name: "home",
         data() {
             return {
-                title: '',
+                title: 'Desde Nuestro sitio',
                 dataToShare: null,
             }
         },

@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3a4f02-f16f-4922-8e1f-03bdf05b04ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/panel/src/assets/scss/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/panel/src/components/Navigator.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/panel/src/views/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/panel/src/views/surveys/add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/news.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/xcuserdata/ferca.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/cordova/platforms/ios/Observatorio de la Laguna.xcworkspace/xcuserdata/ferca.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panel/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/panel/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/panel/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panel/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/panel/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panel/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/panel/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panel/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/panel/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panel/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/panel/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/survey.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/survey.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="SCSS File" />
         <option value="Vue Single File Component" />
       </list>
     </option>
@@ -112,12 +127,14 @@
   </component>
   <component name="ProjectId" id="1P1EswwF8YM1YGghrdHerimUGsA" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565769875911" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -178,7 +195,8 @@
       <workItem from="1566275107658" duration="119000" />
       <workItem from="1566323262288" duration="7328000" />
       <workItem from="1566406858314" duration="920000" />
-      <workItem from="1566417757783" duration="147000" />
+      <workItem from="1566417757783" duration="301000" />
+      <workItem from="1566438660322" duration="3839000" />
     </task>
     <servers />
   </component>
