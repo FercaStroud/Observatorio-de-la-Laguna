@@ -2,6 +2,122 @@
 
 use Illuminate\Http\Request;
 
+$app->post('/answers', function (Request $request) {
+    //$id = $request->get('id');
+
+    return response()->json(
+        [
+            'id' => 0,
+            'title' => 'Economía en la Laguna',
+            'details' => 'Nos gustaría saber tu opinión acerca de lo que piensas de la economía en la región laguna.',
+            'questions' => [
+                [
+                    'id' => 0,
+                    'title' => '¿Cómo consideras el crecimiento económico en Torreón?',
+                    'vModel' => '*Selecciona una respuesta',
+                    'answers' => [
+                        [
+                            'id' => 0,
+                            'title' =>'No lo sé'
+                        ],
+                        [
+                            'id' => 1,
+                            'title' => 'Mucho crecimiento'
+                        ],
+                        [
+                            'id' => 2,
+                            'title' => 'Crecimiento moderado',
+                        ],
+                        [
+                            'id' => 3,
+                            'title' => 'Poco crecimiento',
+                        ],
+                        [
+                            'id' => 4,
+                            'title' => 'No ha crecido nada',
+                        ],
+                    ]
+                ],
+                [
+                    'id' => 1,
+                    'title' => '¿Cómo consideras el crecimiento económico en Gómez Palacio?',
+                    'vModel' => '',
+                    'answers' => [
+                        [
+                            'id' => 0,
+                            'title' =>'No lo sé'
+                        ],
+                        [
+                            'id' => 1,
+                            'title' => 'Mucho crecimiento'
+                        ],
+                        [
+                            'id' => 2,
+                            'title' => 'Crecimiento moderado',
+                        ],
+                        [
+                            'id' => 3,
+                            'title' => 'Poco crecimiento',
+                        ],
+                        [
+                            'id' => 4,
+                            'title' => 'No ha crecido nada',
+                        ],
+                    ]
+                ],
+                [
+                    'id' => 2,
+                    'title' => '¿Cómo consideras el crecimiento económico en Lerdo?',
+                    'vModel' => '',
+                    'answers' => [
+                        [
+                            'id' => 0,
+                            'title' =>'No lo sé'
+                        ],
+                        [
+                            'id' => 1,
+                            'title' => 'Mucho crecimiento'
+                        ],
+                        [
+                            'id' => 2,
+                            'title' => 'Crecimiento moderado',
+                        ],
+                        [
+                            'id' => 3,
+                            'title' => 'Poco crecimiento',
+                        ],
+                        [
+                            'id' => 4,
+                            'title' => 'No ha crecido nada',
+                        ],
+                    ]
+                ]
+            ]
+        ]
+    );
+});
+$app->post('/surveys', function (Request $request) {
+    return response()->json(
+        [
+            [
+                'id' => 0,
+                'title' => 'Economía en la Laguna'
+            ],
+        ]
+    );
+});
+
+$app->post('/news', function (Request $request) {
+    return response()->json(
+        [
+            [
+                'id' => 0,
+                'text' => '¡Estamos estrenando App!'
+            ],
+        ]
+    );
+});
+
 $app->post('/posts', function (Request $request) {
     switch ($request->get('postType')) {
         case "BLOG":
@@ -20,7 +136,6 @@ $app->post('/posts', function (Request $request) {
                 ->where("w47fa_posts.post_type", "LIKE", "post")
                 ->orderBy('post_date', 'desc')->get();
             break;
-
         case 'PERCEPCION':
             return \Illuminate\Support\Facades\DB::table('w47fa_posts')
                 ->select(
@@ -38,7 +153,6 @@ $app->post('/posts', function (Request $request) {
                 ->orderBy('post_date', 'desc')->get();
 
             break;
-
         case 'INDICADORES':
             return \Illuminate\Support\Facades\DB::table('w47fa_posts')
                 ->select(
@@ -57,7 +171,4 @@ $app->post('/posts', function (Request $request) {
 
             break;
     }
-
-
-    //->whereIn('w47fa_posts.post_type', array( 'post', 'attachment' ))->get()->toJson();
 });

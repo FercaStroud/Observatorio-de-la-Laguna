@@ -12,6 +12,7 @@
                 {{survey.title}}
             </f7-button>
         </f7-block>
+
         <f7-popup class="answers-popup-swipe" swipe-to-close>
             <f7-page>
                 <f7-navbar :title="tempAnswers.title">
@@ -19,10 +20,18 @@
                         <f7-link popup-close>Cerrar</f7-link>
                     </f7-nav-right>
                 </f7-navbar>
-
                 <f7-block inset style="background-color: rgba(255,255,255,.84); border-radius: 8px; margin-top: 10px">
                     <p><strong>Detalles:</strong> {{tempAnswers.details}}</p>
                 </f7-block>
+
+                <f7-list>
+                    <f7-list-input type="text" :value="name"
+                                   label="Déjanos tu nombre"
+                                   placeholder="(Opcional)"
+                                   clear-button
+                                   @input="name = $event.target.value">
+                    </f7-list-input>
+                </f7-list>
 
                 <f7-card v-for="(question, index) in tempAnswers.questions" :key="index">
                     <f7-block style="background-color: #368da8; border-radius: 4px">
@@ -37,11 +46,13 @@
                     <f7-list inline-labels>
                         <f7-list-input
                                 type="select"
-                                :value="question.answer"
-                                @input="question.answer = $event.target.value"
+                                @input="question.vModel = $event.target.value"
                         >
-                            <option v-for="answer in tempAnswers.answers[index]" :value="answer">
-                                {{ answer }}
+                            <option value="">
+                                *Selecciona una respuesta
+                            </option>
+                            <option v-for="answer in question.answers" :value="answer.title">
+                                {{ answer.title }}
                             </option>
                         </f7-list-input>
 
@@ -49,7 +60,7 @@
                 </f7-card>
 
                 <f7-block>
-                    <f7-button style="background-color: #f49931; height: 60px; font-size: 1.2em;"  @click="sendForm">
+                    <f7-button style="background-color: #f49931; height: 60px; font-size: 1.2em;" @click="sendForm">
                         <p style="font-weight: bold;color:white;">
                             Enviar
                         </p>
@@ -67,10 +78,10 @@
         name: "survey",
         data() {
             return {
+                name: '',
                 tempAnswers: {
                     title: '',
                     details: '',
-                    answers: [],
                     questions: []
                 },
                 surveys: [],
@@ -83,42 +94,39 @@
         },
         methods: {
             sendForm() {
+                console.log(this.name, "name")
+                console.log(this.tempAnswers, "tempAnswers")
                 const self = this;
                 const app = self.$f7;
-                if (self.tempAnswers.questions.find(self.checkBeforeSendForm)) {
-                    app.dialog.alert(
-                        "Debes de completar todos los datos",
-                        'Verifica tus respuestas'
-                    )
-                } else {
-                    app.dialog.preloader('Enviando Encuesta');
-                    this.$http.post(this.$store.state.application.config.api + 'addAnswers', {
-                        //user_id: this.$store.state.application.user.id,
-                        questions: this.tempAnswers.questions
-                    }).then(response => {
-                        app.dialog.close();
-                        // get body data
-                        let data = response.body
-                        if(data.error == 0){
-                            app.dialog.alert(
-                                "¡Muchas gracias!",
-                                'Encuesta enviada'
-                            )
-                        } else if(data.error == 1){
-                            app.dialog.alert(
-                                "Encuesta enviada anteriormente",
-                                '¡Muchas gracias!'
-                            )
-                        }
-                    }, response => {
-                        app.dialog.close();
+
+                app.dialog.preloader('Enviando Encuesta');
+                this.$http.post(this.$store.state.application.config.api + 'addAnswers', {
+                    user_name: this.name,
+                    questions: this.tempAnswers.questions
+                }).then(response => {
+                    app.dialog.close();
+                    // get body data
+                    let data = response.body
+                    if (data.error == 0) {
                         app.dialog.alert(
-                            "Intenta más tarde",
-                            'Servidor no disponible'
+                            "¡Muchas gracias!",
+                            'Encuesta enviada'
                         )
-                        console.log(response, 'error on sendForm')
-                    });
-                }
+                    } else if (data.error == 1) {
+                        app.dialog.alert(
+                            "Encuesta enviada anteriormente",
+                            '¡Muchas gracias!'
+                        )
+                    }
+                }, response => {
+                    app.dialog.close();
+                    app.dialog.alert(
+                        "Intenta más tarde",
+                        'Servidor no disponible'
+                    )
+                    console.log(response, 'error on sendForm')
+                });
+
             },
             checkBeforeSendForm(arg) {
                 if (arg.answer === this.tempAnswers.answers[0][0]) {
@@ -130,7 +138,7 @@
             getSurveyItemById(id) {
                 this.$f7.dialog.preloader('Cargando Datos');
                 this.$http.post(this.$store.state.application.config.api + 'answers',
-                    { id: id }
+                    {id: id}
                 ).then(response => {
                     this.tempAnswers = response.body;
                     this.$f7.dialog.close();
