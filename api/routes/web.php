@@ -18,7 +18,7 @@ $app->post('/answers', function (Request $request) {
                     'answers' => [
                         [
                             'id' => 0,
-                            'title' =>'No lo sé'
+                            'title' => 'No lo sé'
                         ],
                         [
                             'id' => 1,
@@ -45,7 +45,7 @@ $app->post('/answers', function (Request $request) {
                     'answers' => [
                         [
                             'id' => 0,
-                            'title' =>'No lo sé'
+                            'title' => 'No lo sé'
                         ],
                         [
                             'id' => 1,
@@ -72,7 +72,7 @@ $app->post('/answers', function (Request $request) {
                     'answers' => [
                         [
                             'id' => 0,
-                            'title' =>'No lo sé'
+                            'title' => 'No lo sé'
                         ],
                         [
                             'id' => 1,
@@ -108,14 +108,19 @@ $app->post('/surveys', function (Request $request) {
 });
 
 $app->post('/news', function (Request $request) {
-    return response()->json(
-        [
-            [
-                'id' => 0,
-                'text' => '¡Estamos estrenando App!'
-            ],
-        ]
-    );
+    return \Illuminate\Support\Facades\DB::table('app_news')->get();
+});
+
+$app->post('/news/add', function (Request $request) {
+    if (\Illuminate\Support\Facades\DB::insert('insert into app_news (text) values (?)', [$request->get('text')])) {
+        return response()->json(['success' => true]);
+
+    }
+});
+
+$app->post('/news/delete', function (Request $request) {
+    return \Illuminate\Support\Facades\DB::table('app_news')
+        ->where('id', '=', $request->get('id'))->delete();
 });
 
 $app->post('/posts', function (Request $request) {

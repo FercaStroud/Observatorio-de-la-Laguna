@@ -6,14 +6,14 @@
             <md-list slot="md-expand">
                 <md-list-item>
                     <router-link to="/indicadores/nuevo/">
-                        <md-button style="text-transform: none">
+                        <md-button style="text-transform: none; width:200px;">
                             Agregar Indicador
                         </md-button>
                     </router-link>
                 </md-list-item>
                 <md-list-item>
                     <router-link to="/indicadores/lista/">
-                        <md-button style="text-transform: none">
+                        <md-button style="text-transform: none; width:200px;">
                             Ver Indicadores
                         </md-button>
                     </router-link>
@@ -26,14 +26,14 @@
             <md-list slot="md-expand">
                 <md-list-item>
                     <router-link to="/encuesta/nueva/">
-                        <md-button style="text-transform: none">
+                        <md-button style="text-transform: none; width:200px;">
                             Nueva Encuesta
                         </md-button>
                     </router-link>
                 </md-list-item>
                 <md-list-item>
                     <router-link to="/encuesta/lista/">
-                        <md-button style="text-transform: none">
+                        <md-button style="text-transform: none; width:200px;">
                             Ver Encuestas
                         </md-button>
                     </router-link>
@@ -46,14 +46,14 @@
             <md-list slot="md-expand">
                 <md-list-item>
                     <router-link to="/noticia/nueva/">
-                        <md-button style="text-transform: none">
+                        <md-button style="text-transform: none; width:200px;">
                             Nueva Noticia
                         </md-button>
                     </router-link>
                 </md-list-item>
                 <md-list-item>
                     <router-link to="/noticia/lista/">
-                        <md-button style="text-transform: none">
+                        <md-button style="text-transform: none; width:200px;">
                             Ver Noticias
                         </md-button>
                     </router-link>
@@ -76,5 +76,10 @@
 </script>
 
 <style scoped>
+    .md-drawer .md-list-item-container:hover{
+        color: #e74b7e
+    }
+    .md-button-content{
 
+    }
 </style>
