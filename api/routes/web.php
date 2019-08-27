@@ -96,15 +96,23 @@ $app->post('/answers', function (Request $request) {
         ]
     );
 });
+
 $app->post('/surveys', function (Request $request) {
-    return response()->json(
-        [
-            [
-                'id' => 0,
-                'title' => 'Economía en la Laguna'
-            ],
-        ]
-    );
+    return \Illuminate\Support\Facades\DB::table('app_surveys')->get();
+});
+
+$app->post('survey/status/', function (Request $request) {
+    if (\Illuminate\Support\Facades\DB::table('app_surveys')->where("id", "=", $request->get("id"))
+        ->update(['status' => $request->get("status")])) {
+        return response()->json(['response' => 'true']);
+    } else {
+        return response()->json(['response' => 'false']);
+    }
+});
+
+$app->post('/survey/delete', function (Request $request) {
+    return \Illuminate\Support\Facades\DB::table('app_survey')
+        ->where('id', '=', $request->get('id'))->delete();
 });
 
 $app->post('/documents', function () {

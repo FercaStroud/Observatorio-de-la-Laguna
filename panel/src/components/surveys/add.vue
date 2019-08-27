@@ -18,8 +18,7 @@
                 Agregar Encuesta
             </h2>
             <div class="md-layout md-gutter md-alignment-center">
-                <div class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100">
-
+                <div class="md-layout-item">
                     <md-field style="background-color: #ffffff">
                         <label>Nombre de la encuesta</label>
                         <md-input style="border-bottom: 1px solid black" v-model="regular" md-counter="30"></md-input>

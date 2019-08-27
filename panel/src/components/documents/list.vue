@@ -30,7 +30,7 @@
                     </md-avatar>
                     <div class="md-list-item-text" style="white-space: initial;">
                         <p>{{item.title}}</p>
-                        <a :href="item.src" target="_blank" class="hover-element"
+                        <a :href="$store.state.config.api + 'public/' + item.src" target="_blank" class="hover-element"
                            style="text-decoration: none; color: #368da8; font-weight: bold">
                             Ver Archivo
                         </a>
