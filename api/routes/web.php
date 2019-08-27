@@ -97,7 +97,34 @@ $app->post('/answers', function (Request $request) {
     );
 });
 
-$app->post('/surveys', function (Request $request) {
+$app->post('/answer/add', function (Request $request) {
+    $questionId = \Illuminate\Support\Facades\DB::table('app_questions')->insertGetId([
+        'survey_id' => $request->get("id", ''),
+        'type' => $request->get("type", ''),
+        'title' => $request->get("title", '')
+    ]);
+
+    if ($questionId > 0) {
+
+        if ($request->get('type') != 'TEXT') {
+            foreach ($request->get('answers') as $answer) {
+                \Illuminate\Support\Facades\DB::table('app_answers')->insert([
+                    'question_id' => $questionId,
+                    'title' => $answer['body']
+                ]);
+            }
+            return response()->json(['success' => true]);
+
+        } else {
+            return response()->json(['success' => true]);
+        }
+
+    } else {
+        return response()->json(['success' => false]);
+    }
+});
+
+$app->post('/surveys', function () {
     return \Illuminate\Support\Facades\DB::table('app_surveys')->get();
 });
 

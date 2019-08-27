@@ -30,7 +30,7 @@
         <div class="" v-for="(option, index) in question.options" :key="index">
           <div class="clear-both">
             <input type="text" class="width-90 float-left" placeholder="Ingresa el texto de la respuesta" v-model="option.body">
-            <button class="vsb-btn-link color-red width-10 mt-10" v-on:click="deleteQuestionOptionItem(question.options, index)" v-if="index > 1">Remove</button>
+            <button class="vsb-btn-link color-red width-10 mt-10" v-on:click="deleteQuestionOptionItem(question.options, index)" v-if="index > 1">Eliminar</button>
           </div>
         </div>
         <div class="display-block">
@@ -92,7 +92,7 @@
         <div class="" v-for="(option, index) in question.options" :key="index">
           <div class="clear-both">
             <input type="text" class="width-90 float-left" placeholder="Enter an answer choice" v-model="option.body">
-            <button class="vsb-btn-link color-red width-10 mt-10" v-on:click="deleteQuestionOptionItem(question.options, index)" v-if="index > 1">Remove</button>
+            <button class="vsb-btn-link color-red width-10 mt-10" v-on:click="deleteQuestionOptionItem(question.options, index)" v-if="index > 1">Eliminar</button>
           </div>
         </div>
         <div class="display-block">
@@ -112,8 +112,8 @@
         </div>
       </div>
       <div class="buttons-section">
-        <button type="button" class="vsb-btn-link mr-10 color-green" @click="saveQuestion(question)">Agregar</button>
-        <button type="button" class="vsb-btn-link mr-10 color-blue" @click="cancelQuestion(question)">Cancelar</button>
+        <button type="button" class="vsb-btn-link" style="color: #4693a9; font-size: 1.2em; font-weight: bold" @click="saveQuestion(question)">Agregar</button>
+        <!-- <button type="button" class="vsb-btn-link mr-10 color-blue" @click="cancelQuestion(question)">Cancelar</button> -->
         <!-- <button type="button" class="vsb-btn-link mr-10 color-red" @click="deleteQuestion(question)">Delete</button> -->
       </div>
     </div>
@@ -232,6 +232,8 @@ export default {
      */
     cancelQuestion(question) {
       window.console.log(question);
+      this.$root.$emit('cancel-question', question);
+
       this.question = { type: 'DEFAULT' };
     },
 

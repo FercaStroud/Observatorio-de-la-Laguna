@@ -24,7 +24,8 @@
             </h2>
             <div class="md-layout md-gutter md-alignment-center">
                 <div class="md-layout-item">
-                    <md-card style="margin-top: 20px" class="md-accent" md-with-hover v-for="(item, index) in items" :key="index">
+                    <md-card style="margin-top: 20px" class="md-accent" md-with-hover v-for="(item, index) in items"
+                             :key="index">
                         <md-ripple>
                             <md-card-header>
                                 <div class="md-title">{{item.title}}</div>
@@ -42,7 +43,7 @@
                             </md-card-content>
 
                             <md-card-actions>
-                                <md-button>
+                                <md-button @click="selectedAnswer = item; answerAddDialog = true;">
                                     <md-icon>playlist_add</md-icon>
                                     Agregar Respuesta
                                 </md-button>
@@ -80,17 +81,59 @@
                 <span style="font-weight: bold; font-size: 1.2em">{{snackBarMessage}}</span>
                 <md-button style="background-color: white; color:black" @click="showSnackbar = false">Cerrar</md-button>
             </md-snackbar>
+
+            <md-dialog style="background-color: white; z-index: 6 !important; width:80%"
+                       :md-click-outside-to-close="false" :md-active.sync="answerAddDialog">
+                <md-dialog-title>
+                    <md-progress-spinner
+                            v-if="loading"
+                            style="stroke:#e74b7e !important;"
+                            :md-diameter="20"
+                            :md-stroke="10" md-mode="indeterminate"></md-progress-spinner>
+                    Añadir Respuesta</md-dialog-title>
+                <md-dialog-content>
+                    <p>
+                        <strong>La respuesta será agregada a la pregunta:</strong>
+                        {{selectedAnswer.title}}
+                    </p>
+                    <SurveyBuilder :options="SurveyBuilderJson"/>
+                </md-dialog-content>
+                <md-dialog-actions>
+                    <md-button class="md-primary" @click="answerAddDialog = false">Cerrar</md-button>
+                </md-dialog-actions>
+            </md-dialog>
+
         </md-app-content>
     </md-app>
 </template>
 
 <script>
     import Navigator from "../Navigator";
+    import Answers from "./answers";
+    import {SurveyBuilder, SurveyBuilderJson} from 'vue-survey-builder';
 
     export default {
         name: "listSurveys",
         data() {
             return {
+                SurveyBuilderJson: {
+                    "question": null,
+                    "type": null,
+                    "multiSelect": false,
+                    "labels": [],
+                    "options": [
+                        {
+                            "body": null,
+                            "sequence": 1
+                        },
+                        {
+                            "body": null,
+                            "sequence": 2
+                        }
+                    ]
+                },
+                selectedAnswer: {id: '', title: ''},
+                answerAddDialog: false,
                 showSnackbar: false,
                 snackBarMessage: '',
                 selectedItemId: null,
@@ -104,9 +147,44 @@
         created: function () {
         },
         mounted: function () {
+            this.$root.$on('add-update-question', question => {
+                this.sendAnswerForm(question)
+            });
+            this.$root.$on('cancel-question', question => {
+                this.answerAddDialog = false
+            });
             this.getItemsFromServer()
         },
         methods: {
+            sendAnswerForm(question) {
+                let type = question.type //BOOLEAN, TEXT, MULTI_CHOICE
+                let title = question.body
+                let answers = question.options
+
+                this.loading = true;
+                this.$http.post(this.$store.state.config.api + 'answer/add/', {
+                    id: this.selectedAnswer.id,
+                    type: type,
+                    title: title,
+                    answers: answers,
+                }).then(response => {
+                    this.answerAddDialog = false
+                    this.loading = false;
+                    this.showSnackbar = true
+                    this.bgSnackbar = '#50ac66'
+                    this.cSnackbar = '#ffffff'
+                    this.snackBarMessage = 'Respuesta agregada.'
+                }, response => {
+                    // error callback
+                    this.answerAddDialog = false
+                    console.log(response, 'error on sendAnswerForm');
+                    this.loading = false;
+                    this.bgSnackbar = '#e74b7e'
+                    this.cSnackbar = '#ffffff'
+                    this.showSnackbar = true
+                    this.snackBarMessage = 'Ha ocurrido un error, intente más tarde.'
+                });
+            },
             changeStatus(id, status) {
                 this.loading = true;
                 this.$http.post(this.$store.state.config.api + 'survey/status/', {
@@ -180,7 +258,7 @@
                 });
             },
         },
-        components: {Navigator}
+        components: {Answers, Navigator, SurveyBuilder, SurveyBuilderJson}
     }
 </script>
 
