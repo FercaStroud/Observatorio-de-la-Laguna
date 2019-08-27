@@ -6,7 +6,6 @@
                 Noticias - Listado
             </span>
         </md-app-toolbar>
-
         <md-app-drawer md-permanent="full" style="height: 100vh;" class="menu-container">
             <md-toolbar class="md-transparent" md-elevation="0">
                 <img alt="" src="../../assets/images/observatorio-logo-completo.png">

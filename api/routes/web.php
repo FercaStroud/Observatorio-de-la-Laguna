@@ -107,7 +107,16 @@ $app->post('/surveys', function (Request $request) {
     );
 });
 
-$app->post('/news', function (Request $request) {
+$app->post('/documents', function () {
+    return \Illuminate\Support\Facades\DB::table('app_documents')->get();
+});
+
+$app->post('/documents/delete', function (Request $request) {
+    return \Illuminate\Support\Facades\DB::table('app_documents')
+        ->where('id', '=', $request->get('id'))->delete();
+});
+
+$app->post('/news', function () {
     return \Illuminate\Support\Facades\DB::table('app_news')->get();
 });
 
