@@ -2,8 +2,8 @@
     <md-app>
         <md-app-toolbar class="md-primary" style="background-color: white">
             <span class="md-title">
-                <md-icon>add_circle</md-icon>
-                Noticias - Nueva
+                <md-icon>notification_important</md-icon>
+                Indicadores - Nuevo
             </span>
         </md-app-toolbar>
 
@@ -15,13 +15,16 @@
         </md-app-drawer>
         <md-app-content>
             <h2 style="">
-               Agregar Noticia
+               Agregar Indicador
             </h2>
             <div class="md-layout md-gutter md-alignment-center">
                 <div class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100">
                     <md-field style="background-color: #ffffff">
-                        <label>Noticia</label>
-                        <md-textarea style="border-bottom: 1px solid black" v-model="textarea"></md-textarea>
+                        <label>Título del documento</label>
+                        <md-input type="text" style="border-bottom: 1px solid black" v-model="textarea"></md-input>
+                    </md-field>
+                    <md-field style="background-color: #ffffff">
+                        <md-input type="file" style="border-bottom: 1px solid black" ></md-input>
                     </md-field>
                     <md-button class="md-primary">Añadir</md-button>
                 </div>
@@ -33,7 +36,7 @@
 <script>
     import Navigator from "../Navigator";
     export default {
-        name: "addNews",
+        name: "addDocument",
         components: {Navigator}
     }
 </script>

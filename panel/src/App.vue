@@ -1,16 +1,16 @@
 <template>
-  <div id="app">
-    <Navigator/>
-    <router-view/>
-  </div>
+    <div id="app">
+        <router-view/>
+    </div>
 </template>
 
 <style lang="scss">
 
 </style>
 <script>
-  import Navigator from "./components/Navigator";
-  export default {
-    components: {Navigator}
-  }
+    import Navigator from "./components/Navigator";
+
+    export default {
+        components: {Navigator}
+    }
 </script>

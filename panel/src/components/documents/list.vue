@@ -3,7 +3,7 @@
         <md-app-toolbar class="md-primary" style="background-color: white">
             <span class="md-title">
                 <md-icon>poll</md-icon>
-                Noticias - Listado
+                Indicadores - Listado
             </span>
         </md-app-toolbar>
 
@@ -15,7 +15,7 @@
         </md-app-drawer>
         <md-app-content>
             <h2 style="">
-                Todas las noticias
+                Todos los Indicadores
             </h2>
             <md-list class="md-triple-line">
                 <md-list-item>
@@ -107,7 +107,7 @@
     import Navigator from "../Navigator";
 
     export default {
-        name: "listNews",
+        name: "listDocument",
         components: {Navigator}
     }
 </script>

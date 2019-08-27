@@ -19,7 +19,7 @@
         </f7-navbar>
 
         <f7-block-title style="color:#398fa9; font-weight: bold">
-           {{title}}
+            {{title}}
         </f7-block-title>
         <f7-card class="elevation-4" v-for="(item, index) in $store.state.application.tempPostItems" :key="index">
             <f7-card-header class="no-border card-header">
@@ -99,7 +99,7 @@
                         break;
                     case 'whatsapp':
                         url = 'https://api.whatsapp.com/send?text=Mira esta nota que saqué de la App del Observatorio de la Laguna: ' +
-                            ' *' + this.dataToShare.post_title + '* '+
+                            ' *' + this.dataToShare.post_title + '* ' +
                             ' ' + this.dataToShare.post_url
                         break;
                     case 'facebook':

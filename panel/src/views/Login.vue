@@ -1,24 +1,28 @@
 <template>
     <section style="margin-top: 20px">
         <div class="md-layout">
-            <div class="md-layout-item md-size-25"
-                 style="padding-bottom: 20px; background-color: white; border-radius: 9px;">
-                <md-field>
+            <div class="md-layout-item md-size-25 md-elevation-3"
+                 style="margin:20px;padding-bottom: 20px;
+                 background-color: white; border-radius: 9px;">
+                <img style="margin:20px;width: 300px; height: auto" src="../assets/images/observatorio-logo-completo.png">
+
+                <md-field style="">
                     <label>Nombre de Usuario</label>
                     <md-input v-model="type"></md-input>
-                    <span class="md-helper-text">Aquí es para poner el usuario :v</span>
                 </md-field>
 
-                <md-field>
+                <md-field style="">
                     <label>Password</label>
                     <md-input :md-toggle-password="false" type="password" v-model="type"></md-input>
-                    <span class="md-helper-text">Píquele bien</span>
                 </md-field>
             </div>
         </div>
         <div class="md-layout">
-            <div class="md-layout-item">
-                <md-button style="margin-left:30px;color:#e74b7e">Enviar</md-button>
+            <div class="md-layout-item md-size-25 ">
+                <md-button class="md-elevation-3" style="
+                width:100%; background-color: white;
+                margin-left:20px;
+                color:#8b8b8b !important;">Enviar</md-button>
             </div>
         </div>
     </section>
@@ -30,6 +34,16 @@
     }
 </script>
 
-<style scoped>
-
+<style>
+    body, html{
+        background-image: url("../assets/images/logo-sin-texto.jpg");
+    }
+    .md-button-content,.md-field label{
+        color:#8b8b8b !important;
+    }
+    .md-field {
+        border-bottom: 1px solid #8b8b8b;
+        left: 5%;
+        width: 90% !important;
+    }
 </style>
