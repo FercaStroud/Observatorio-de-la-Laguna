@@ -101,6 +101,17 @@ $app->post('/surveys', function (Request $request) {
     return \Illuminate\Support\Facades\DB::table('app_surveys')->get();
 });
 
+$app->post('/survey/add', function (Request $request) {
+    if (\Illuminate\Support\Facades\DB::table('app_surveys')->insert([
+        'title' => $request->get("title", ''),
+        'description' => $request->get("description", ''),
+    ])) {
+        return response()->json(['success' => true]);
+    } else {
+        return response()->json(['success' => false]);
+    }
+});
+
 $app->post('survey/status/', function (Request $request) {
     if (\Illuminate\Support\Facades\DB::table('app_surveys')->where("id", "=", $request->get("id"))
         ->update(['status' => $request->get("status")])) {
@@ -111,7 +122,7 @@ $app->post('survey/status/', function (Request $request) {
 });
 
 $app->post('/survey/delete', function (Request $request) {
-    return \Illuminate\Support\Facades\DB::table('app_survey')
+    return \Illuminate\Support\Facades\DB::table('app_surveys')
         ->where('id', '=', $request->get('id'))->delete();
 });
 

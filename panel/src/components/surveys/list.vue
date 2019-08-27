@@ -24,7 +24,7 @@
             </h2>
             <div class="md-layout md-gutter md-alignment-center">
                 <div class="md-layout-item">
-                    <md-card class="md-accent" md-with-hover v-for="(item, index) in items" :key="index">
+                    <md-card style="margin-top: 20px" class="md-accent" md-with-hover v-for="(item, index) in items" :key="index">
                         <md-ripple>
                             <md-card-header>
                                 <div class="md-title">{{item.title}}</div>
@@ -32,9 +32,20 @@
 
                             <md-card-content>
                                 {{item.description}}
+
+                                <div>
+                                    <md-button>
+                                        <md-icon>list_alt</md-icon>
+                                        Ver Respuestas
+                                    </md-button>
+                                </div>
                             </md-card-content>
 
                             <md-card-actions>
+                                <md-button>
+                                    <md-icon>playlist_add</md-icon>
+                                    Agregar Respuesta
+                                </md-button>
                                 <md-button>
                                     <md-icon>cloud_download</md-icon>
                                     Resultados
@@ -63,8 +74,9 @@
                                md-confirm-text="Confirmar"
                                md-cancel-text="Cancelar"
                                @md-cancel="onCancel"
-                               @md-confirm="onConfirm" />
-            <md-snackbar :style="[{backgroundColor: bgSnackbar, color: cSnackbar}]" :md-duration="10000" :md-active.sync="showSnackbar" md-persistent>
+                               @md-confirm="onConfirm"/>
+            <md-snackbar :style="[{backgroundColor: bgSnackbar, color: cSnackbar}]" :md-duration="10000"
+                         :md-active.sync="showSnackbar" md-persistent>
                 <span style="font-weight: bold; font-size: 1.2em">{{snackBarMessage}}</span>
                 <md-button style="background-color: white; color:black" @click="showSnackbar = false">Cerrar</md-button>
             </md-snackbar>
@@ -95,7 +107,7 @@
             this.getItemsFromServer()
         },
         methods: {
-            changeStatus(id, status){
+            changeStatus(id, status) {
                 this.loading = true;
                 this.$http.post(this.$store.state.config.api + 'survey/status/', {
                     id: id, status: !status

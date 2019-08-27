@@ -40,6 +40,6 @@ export default new Router({
             path: '/indicadores/lista',
             name: 'listDocument',
             component: () => import('./components/documents/list.vue')
-        }
+        },
     ]
 })

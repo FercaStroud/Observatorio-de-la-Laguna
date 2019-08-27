@@ -26,7 +26,7 @@
                 <div class="md-layout-item">
                     <md-field style="background-color: #ffffff">
                         <label>Título del documento</label>
-                        <md-input type="text" style="border-bottom: 1px solid black" v-model="title"></md-input>
+                        <md-input type="text" style="border-bottom: 1px solid black"  md-counter="140" v-model="title"></md-input>
                     </md-field>
                     <div>
                         <label style="cursor: pointer; font-weight: bold;" for="fileInput">

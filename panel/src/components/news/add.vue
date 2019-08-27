@@ -26,7 +26,7 @@
                 <div class="md-layout-item">
                     <md-field style="background-color: #ffffff">
                         <label>Noticia</label>
-                        <md-textarea style="border-bottom: 1px solid black" v-model="text"></md-textarea>
+                        <md-textarea  md-counter="240" style="border-bottom: 1px solid black" v-model="text"></md-textarea>
                     </md-field>
                     <md-button @click="sendForm" class="md-primary">Añadir</md-button>
                 </div>
