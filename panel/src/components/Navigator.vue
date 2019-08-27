@@ -5,7 +5,7 @@
             <span class="md-list-item-text">Indicadores</span>
             <md-list slot="md-expand">
                 <md-list-item>
-                    <router-link to="/indicadores/nuevo/">
+                    <router-link to="/indicador/nuevo/">
                         <md-button style="text-transform: none; width:200px;">
                             Agregar Indicador
                         </md-button>

@@ -115,13 +115,19 @@
                 this.loading = true;
                 this.$http.post(this.$store.state.config.api + 'documents').then(response => {
                     this.items = response.body;
-
                     if (this.items.length === 0) {
-                        this.items = [{text: 'Sin items por el momento'}]
+                        this.showSnackbar = true
+                        this.bgSnackbar = '#50ac66'
+                        this.cSnackbar = '#ffffff'
+                        this.snackBarMessage = 'Éxito, sin datos para mostrar.'
                     }
                     this.loading = false;
                 }, response => {
-                    this.items = [{text: 'Sin noticias por el momento'}]
+                    this.loading = false;
+                    this.bgSnackbar = '#e74b7e'
+                    this.cSnackbar = '#ffffff'
+                    this.showSnackbar = true
+                    this.snackBarMessage = 'Ha ocurrido un error, intente más tarde.'
                     // error callback
                     console.log(response, 'error on getItemsFromServer / documents');
                     this.loading = false;

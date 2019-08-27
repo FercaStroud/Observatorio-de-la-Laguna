@@ -111,6 +111,37 @@ $app->post('/documents', function () {
     return \Illuminate\Support\Facades\DB::table('app_documents')->get();
 });
 
+$app->post('/documents/add', function (Request $request) {
+
+    $random_string = function ($length, $directory = '', $extension = '') {
+        $dir = !empty($directory) && is_dir($directory) ? $directory : dirname(__FILE__);
+        do {
+            $key = '';
+            $keys = array_merge(range(0, 9), range('a', 'z'));
+            for ($i = 0; $i < $length; $i++) {
+                $key .= $keys[array_rand($keys)];
+            }
+        } while (file_exists($dir . '/' . $key . (!empty($extension) ? '.' . $extension : '')));
+        return $key . (!empty($extension) ? '.' . $extension : '');
+    };
+
+    $fileName = $random_string(20, '', $request->file('pdfFile')->getClientOriginalExtension());
+    $destinationPath = "public/";
+    if ($request->file('pdfFile') != null) {
+        $request->file('pdfFile')->move($destinationPath, $fileName);
+    } else {
+        return response()->json(['success' => false]);
+    }
+
+    if (\Illuminate\Support\Facades\DB::table('app_documents')->insert([
+        'src' => $fileName,
+        'title' => $request->get("title"),
+    ])) {
+        return response()->json(['success' => true]);
+    }
+
+});
+
 $app->post('/documents/delete', function (Request $request) {
     return \Illuminate\Support\Facades\DB::table('app_documents')
         ->where('id', '=', $request->get('id'))->delete();
@@ -121,9 +152,12 @@ $app->post('/news', function () {
 });
 
 $app->post('/news/add', function (Request $request) {
-    if (\Illuminate\Support\Facades\DB::insert('insert into app_news (text) values (?)', [$request->get('text')])) {
+    if (\Illuminate\Support\Facades\DB::table('app_news')->insert(
+        ['text' => $request->get('text')]
+    )) {
         return response()->json(['success' => true]);
-
+    } else {
+        return response()->json(['success' => false]);
     }
 });
 
