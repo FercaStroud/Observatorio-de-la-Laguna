@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    userLogged: false,
     config: {
       //api: 'https://app.observatoriodelalaguna.org.mx/api/public/',
       api: 'http://localhost:8000/',

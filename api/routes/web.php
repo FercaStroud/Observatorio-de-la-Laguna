@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Http\Request;
+$app->get('/', function (Request $request) {
+    echo sha1("ObservatorioLaguna!?123");
+});
 
 $app->post('/login', function (Request $request) {
     $result = DB::table('app_users')->where(
@@ -13,6 +16,12 @@ $app->post('/login', function (Request $request) {
         return response()->json(['response' => 'true']);
     }
 });
+
+$app->post('/questions/get', function (Request $request) {
+    return \Illuminate\Support\Facades\DB::table('app_questions')
+        ->where("survey_id", "=", $request->get("id"))->get();
+});
+
 
 $app->post('/answers', function (Request $request) {
     //$id = $request->get('id');

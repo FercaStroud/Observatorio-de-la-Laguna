@@ -12,21 +12,26 @@
                         :md-stroke="10" md-mode="indeterminate"></md-progress-spinner>
                 <md-field style="">
                     <label>Nombre de Usuario</label>
-                    <md-input v-model="type"></md-input>
+                    <md-input v-model="username"></md-input>
                 </md-field>
 
                 <md-field style="">
                     <label>Password</label>
-                    <md-input :md-toggle-password="false" type="password" v-model="type"></md-input>
+                    <md-input :md-toggle-password="false" type="password" v-model="password"></md-input>
                 </md-field>
                 <md-dialog-actions>
                     <md-button class="md-primary" @click="answerAddDialog = false">Cerrar</md-button>
                 </md-dialog-actions>
             </div>
         </div>
+        <md-snackbar :style="[{backgroundColor: bgSnackbar, color: cSnackbar}]" :md-duration="10000"
+                     :md-active.sync="showSnackbar" md-persistent>
+            <span style="font-weight: bold; font-size: 1.2em">{{snackBarMessage}}</span>
+            <md-button style="background-color: white; color:black" @click="showSnackbar = false">Cerrar</md-button>
+        </md-snackbar>
         <div class="md-layout">
             <div class="md-layout-item md-size-25 ">
-                <md-button class="md-elevation-3" style="
+                <md-button @click="login" class="md-elevation-3" style="
                 width:100%; background-color: white;
                 margin-left:20px;
                 color:#8b8b8b !important;">Enviar</md-button>
@@ -49,6 +54,40 @@
                 password: ''
             }
         },
+        methods: {
+            login() {
+                this.loading = true;
+                this.$http.post(this.$store.state.config.api + 'login', {
+                    username: this.username,
+                    password: this.password,
+                }).then(response => {
+                    let data = response.data;
+                    if (data.response == "false") {
+                        this.loading = false;
+                        this.bgSnackbar = '#e74b7e'
+                        this.cSnackbar = '#ffffff'
+                        this.showSnackbar = true
+                        this.snackBarMessage = 'Usuario y/o Contraseña incorrecta(s).'
+                    } else {
+                        this.$store.state.userLogged = true
+                        this.loading = false;
+                        this.showSnackbar = true
+                        this.bgSnackbar = '#50ac66'
+                        this.cSnackbar = '#ffffff'
+                        this.snackBarMessage = 'Bienvenido.'
+                        this.$router.push('/encuesta/lista');
+                    }
+                }, response => {
+                    // error callback
+                    console.log(response, 'error on deleteNewsById/Confirm()');
+                    this.loading = false;
+                    this.bgSnackbar = '#e74b7e'
+                    this.cSnackbar = '#ffffff'
+                    this.showSnackbar = true
+                    this.snackBarMessage = 'Ha ocurrido un error, intente más tarde.'
+                });
+            }
+        }
     }
 </script>
 

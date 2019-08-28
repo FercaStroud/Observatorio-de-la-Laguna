@@ -71,7 +71,12 @@
 
 <script>
     export default {
-        name: "navigator"
+        name: "navigator",
+        created: function () {
+            if(!this.$store.state.userLogged){
+                this.$router.push('/');
+            }
+        },
     }
 </script>
 

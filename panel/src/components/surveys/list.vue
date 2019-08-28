@@ -35,10 +35,16 @@
                                 {{item.description}}
 
                                 <div>
-                                    <md-button>
+                                    <md-button @click="getQuestionsById(item.id)">
                                         <md-icon>list_alt</md-icon>
-                                        Ver Respuestas
+                                        Ver preguntas en esta encuesta
                                     </md-button>
+                                </div>
+
+                                <div v-for="(question,index) in questions[item.id]" :key="index">
+                                    <strong>Título: </strong>{{ question.title }} <br/>
+                                    <strong>Tipo: </strong>{{ question.type }} <br/>
+                                    <hr/>
                                 </div>
                             </md-card-content>
 
@@ -109,7 +115,6 @@
 
 <script>
     import Navigator from "../Navigator";
-    import Answers from "./answers";
     import {SurveyBuilder, SurveyBuilderJson} from 'vue-survey-builder';
 
     export default {
@@ -141,7 +146,8 @@
                 bgSnackbar: '',
                 cSnackbar: '',
                 loading: false,
-                items: []
+                items: [],
+                questions:[]
             }
         },
         created: function () {
@@ -156,6 +162,26 @@
             this.getItemsFromServer()
         },
         methods: {
+            getQuestionsById(id){
+                this.loading = true;
+                this.$http.post(this.$store.state.config.api + 'questions/get/', {
+                    id: id
+                }).then(response => {
+                    this.loading = false;
+
+                    this.questions[id] = response.body
+
+                }, response => {
+                    // error callback
+                    this.answerAddDialog = false
+                    console.log(response, 'error on sendAnswerForm');
+                    this.loading = false;
+                    this.bgSnackbar = '#e74b7e'
+                    this.cSnackbar = '#ffffff'
+                    this.showSnackbar = true
+                    this.snackBarMessage = 'Ha ocurrido un error, intente más tarde.'
+                });
+            },
             sendAnswerForm(question) {
                 let type = question.type //BOOLEAN, TEXT, MULTI_CHOICE
                 let title = question.body
@@ -258,7 +284,7 @@
                 });
             },
         },
-        components: {Answers, Navigator, SurveyBuilder, SurveyBuilderJson}
+        components: {Navigator, SurveyBuilder, SurveyBuilderJson}
     }
 </script>
 
