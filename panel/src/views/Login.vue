@@ -5,7 +5,11 @@
                  style="margin:20px;padding-bottom: 20px;
                  background-color: white; border-radius: 9px;">
                 <img style="margin:20px;width: 300px; height: auto" src="../assets/images/observatorio-logo-completo.png">
-
+                <md-progress-spinner
+                        v-if="loading"
+                        style="stroke:#e74b7e !important;"
+                        :md-diameter="20"
+                        :md-stroke="10" md-mode="indeterminate"></md-progress-spinner>
                 <md-field style="">
                     <label>Nombre de Usuario</label>
                     <md-input v-model="type"></md-input>
@@ -15,6 +19,9 @@
                     <label>Password</label>
                     <md-input :md-toggle-password="false" type="password" v-model="type"></md-input>
                 </md-field>
+                <md-dialog-actions>
+                    <md-button class="md-primary" @click="answerAddDialog = false">Cerrar</md-button>
+                </md-dialog-actions>
             </div>
         </div>
         <div class="md-layout">
@@ -30,7 +37,18 @@
 
 <script>
     export default {
-        name: "loginPage"
+        name: "loginPage",
+        data() {
+            return {
+                showSnackbar: false,
+                snackBarMessage: '',
+                bgSnackbar: '',
+                cSnackbar: '',
+                loading: false,
+                username: '',
+                password: ''
+            }
+        },
     }
 </script>
 

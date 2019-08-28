@@ -2,6 +2,18 @@
 
 use Illuminate\Http\Request;
 
+$app->post('/login', function (Request $request) {
+    $result = DB::table('app_users')->where(
+        'username', '=', $request->get("username")
+    )->where("password", '=', sha1($request->get("password")))->get();
+
+    if (count($result) == 0) {
+        return response()->json(['response' => 'false']);
+    } else {
+        return response()->json(['response' => 'true']);
+    }
+});
+
 $app->post('/answers', function (Request $request) {
     //$id = $request->get('id');
 
