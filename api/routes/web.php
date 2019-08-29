@@ -19,7 +19,8 @@ $app->post('/login', function (Request $request) {
 
 $app->post('/questions/get', function (Request $request) {
     return \Illuminate\Support\Facades\DB::table('app_questions')
-        ->where("survey_id", "=", $request->get("id"))->get();
+        ->where("survey_id", "=", $request->get("id"))
+        ->orderBy('id', 'DESC')->get();
 });
 
 
@@ -146,7 +147,8 @@ $app->post('/answer/add', function (Request $request) {
 });
 
 $app->post('/surveys', function () {
-    return \Illuminate\Support\Facades\DB::table('app_surveys')->get();
+    return \Illuminate\Support\Facades\DB::table('app_surveys')
+        ->orderBy('id', 'DESC')->get();
 });
 
 $app->post('/survey/add', function (Request $request) {
@@ -175,7 +177,8 @@ $app->post('/survey/delete', function (Request $request) {
 });
 
 $app->post('/documents', function () {
-    return \Illuminate\Support\Facades\DB::table('app_documents')->get();
+    return \Illuminate\Support\Facades\DB::table('app_documents')
+        ->orderBy('id', 'DESC')->get();
 });
 
 $app->post('/documents/add', function (Request $request) {
@@ -215,7 +218,8 @@ $app->post('/documents/delete', function (Request $request) {
 });
 
 $app->post('/news', function () {
-    return \Illuminate\Support\Facades\DB::table('app_news')->get();
+    return \Illuminate\Support\Facades\DB::table('app_news')
+        ->orderBy('id', 'DESC')->get();
 });
 
 $app->post('/news/add', function (Request $request) {

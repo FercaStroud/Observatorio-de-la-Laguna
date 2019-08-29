@@ -1,26 +1,37 @@
-body, html{
+body, html {
   background-color: #f7f7f8;
   overflow-x: hidden;
 }
-.md-menu-content-container{
+
+.md-menu-content-container {
   background-color: #ffffff !important;
 }
+
 a {
   text-decoration: none !important;
   color: #4693a9;
 }
+
 .md-button-content {
   text-decoration: none !important;
   color: #4693a9;
 }
+
 .md-button-content {
   text-decoration: none !important;
   color: #4693a9;
 }
-.menu-container{
-  img{
+
+.menu-container {
+  img {
     padding-top: 20px;
   }
+
   width: 250px;
   background-color: white;
+}
+
+.md-app-scroller {
+  overflow: auto;
+  height: auto !important;
 }

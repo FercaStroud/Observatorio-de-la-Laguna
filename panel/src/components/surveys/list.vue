@@ -24,8 +24,8 @@
             </h2>
             <div class="md-layout md-gutter md-alignment-center">
                 <div class="md-layout-item">
-                    <md-card style="margin-top: 20px" class="md-accent" md-with-hover v-for="(item, index) in items"
-                             :key="index">
+                    <md-card style="margin-top: 20px" class="md-accent"
+                             md-with-hover v-for="(item, index) in items" :key="index">
                         <md-ripple>
                             <md-card-header>
                                 <div class="md-title">{{item.title}}</div>
@@ -41,9 +41,21 @@
                                     </md-button>
                                 </div>
 
-                                <div v-for="(question,index) in questions[item.id]" :key="index">
-                                    <strong>Título: </strong>{{ question.title }} <br/>
-                                    <strong>Tipo: </strong>{{ question.type }} <br/>
+                                <div v-for="(question,index) in questions[item.id]" :key="index"
+                                style="background-color: #fcfcfc; padding: 10px; margin-top: 10px">
+                                    <div style="width: 50%; float: left">
+                                        <strong>Pregunta: </strong>{{ question.title }} <br/>
+                                        <strong>Tipo: </strong>{{ question.type }} <br/>
+                                    </div>
+                                    <div style="width: 50%; float: left; border-left: 1px solid black">
+                                        <strong style="margin-left: 10px">Respuestas: </strong><br/>
+
+                                        <ul style="margin-left: 10px">
+                                            <li>adsfsd</li>
+                                            <li>adsfsd</li>
+                                            <li>adsfsd</li>
+                                        </ul>
+                                    </div>
                                     <hr/>
                                 </div>
                             </md-card-content>
@@ -96,7 +108,8 @@
                             style="stroke:#e74b7e !important;"
                             :md-diameter="20"
                             :md-stroke="10" md-mode="indeterminate"></md-progress-spinner>
-                    Añadir Respuesta</md-dialog-title>
+                    Añadir Respuesta
+                </md-dialog-title>
                 <md-dialog-content>
                     <p>
                         <strong>La respuesta será agregada a la pregunta:</strong>
@@ -147,7 +160,7 @@
                 cSnackbar: '',
                 loading: false,
                 items: [],
-                questions:[]
+                questions: []
             }
         },
         created: function () {
@@ -162,7 +175,7 @@
             this.getItemsFromServer()
         },
         methods: {
-            getQuestionsById(id){
+            getQuestionsById(id) {
                 this.loading = true;
                 this.$http.post(this.$store.state.config.api + 'questions/get/', {
                     id: id

@@ -4,7 +4,7 @@
             <div class="md-layout-item md-size-25 md-elevation-3"
                  style="margin:20px;padding-bottom: 20px;
                  background-color: white; border-radius: 9px;">
-                <img style="margin:20px;width: 300px; height: auto" src="../assets/images/observatorio-logo-completo.png">
+                <img style="margin-bottom:20px; margin-top:20px; margin-left:10%;width: 80%; height: auto" src="../assets/images/observatorio-logo-completo.png">
                 <md-progress-spinner
                         v-if="loading"
                         style="stroke:#e74b7e !important;"
@@ -19,9 +19,6 @@
                     <label>Password</label>
                     <md-input :md-toggle-password="false" type="password" v-model="password"></md-input>
                 </md-field>
-                <md-dialog-actions>
-                    <md-button class="md-primary" @click="answerAddDialog = false">Cerrar</md-button>
-                </md-dialog-actions>
             </div>
         </div>
         <md-snackbar :style="[{backgroundColor: bgSnackbar, color: cSnackbar}]" :md-duration="10000"
