@@ -24,9 +24,8 @@
             </h2>
             <div class="md-layout md-gutter md-alignment-center">
                 <div class="md-layout-item">
-                    <md-card style="margin-top: 20px" class="md-accent"
-                             md-with-hover v-for="(item, index) in items" :key="index">
-                        <md-ripple>
+                    <md-card style="margin-top: 20px; background-color: rgb(255,255,255)"
+                              v-for="(item, index) in items" :key="index">
                             <md-card-header>
                                 <div class="md-title">{{item.title}}</div>
                             </md-card-header>
@@ -42,19 +41,33 @@
                                 </div>
 
                                 <div v-for="(question,index) in questions[item.id]" :key="index"
-                                style="background-color: #fcfcfc; padding: 10px; margin-top: 10px">
-                                    <div style="width: 50%; float: left">
+                                     style="background-color: #fcfcfc; padding: 10px; margin-top: 10px">
+
+                                    <div v-if="question.type === 'TEXT'" style="">
                                         <strong>Pregunta: </strong>{{ question.title }} <br/>
                                         <strong>Tipo: </strong>{{ question.type }} <br/>
                                     </div>
-                                    <div style="width: 50%; float: left; border-left: 1px solid black">
-                                        <strong style="margin-left: 10px">Respuestas: </strong><br/>
+                                    <div v-else style="width: 50%; float: left">
+                                        <strong>Pregunta: </strong>{{ question.title }} <br/>
+                                        <strong>Tipo: </strong>{{ question.type }} <br/>
+                                    </div>
 
-                                        <ul style="margin-left: 10px">
-                                            <li>adsfsd</li>
-                                            <li>adsfsd</li>
-                                            <li>adsfsd</li>
+                                    <div  v-if="question.type !== 'TEXT'"  style="width: 50%; float: left; border-left: 1px solid black">
+                                        <strong
+                                                style="margin-left: 10px">Respuestas: </strong><br/>
+                                        <ul
+                                            style="margin-left: 10px">
+                                            <li v-for="(item, index) in answers[question.id]" :key="index">
+                                                {{ item.title }}
+                                            </li>
                                         </ul>
+                                    </div>
+                                    <div v-show="question.type !== 'TEXT'">
+                                        <md-button @click="getAnswersById(question.id)"
+                                        >
+                                            <md-icon>list_alt</md-icon>
+                                            Ver respuestas en esta pregunta
+                                        </md-button>
                                     </div>
                                     <hr/>
                                 </div>
@@ -65,7 +78,7 @@
                                     <md-icon>playlist_add</md-icon>
                                     Agregar Respuesta
                                 </md-button>
-                                <md-button>
+                                <md-button :href="$store.state.config.api + '/excel?id=' + item.id" target="_blank">
                                     <md-icon>cloud_download</md-icon>
                                     Resultados
                                 </md-button>
@@ -82,7 +95,6 @@
                                     Eliminar
                                 </md-button>
                             </md-card-actions>
-                        </md-ripple>
                     </md-card>
                 </div>
             </div>
@@ -160,7 +172,8 @@
                 cSnackbar: '',
                 loading: false,
                 items: [],
-                questions: []
+                questions: [],
+                answers: []
             }
         },
         created: function () {
@@ -184,6 +197,26 @@
 
                     this.questions[id] = response.body
 
+                }, response => {
+                    // error callback
+                    this.answerAddDialog = false
+                    console.log(response, 'error on sendAnswerForm');
+                    this.loading = false;
+                    this.bgSnackbar = '#e74b7e'
+                    this.cSnackbar = '#ffffff'
+                    this.showSnackbar = true
+                    this.snackBarMessage = 'Ha ocurrido un error, intente más tarde.'
+                });
+            },
+            getAnswersById(id) {
+                this.loading = true;
+                this.$http.post(this.$store.state.config.api + 'answers/get/', {
+                    id: id
+                }).then(response => {
+                    this.loading = false;
+
+                    this.answers[id] = response.body
+                    console.log(response.body)
                 }, response => {
                     // error callback
                     this.answerAddDialog = false

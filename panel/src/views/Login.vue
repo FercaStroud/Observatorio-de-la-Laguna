@@ -88,7 +88,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     body, html{
         background-image: url("../assets/images/logo-sin-texto.jpg");
     }

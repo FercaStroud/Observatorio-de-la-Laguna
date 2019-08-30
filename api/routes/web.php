@@ -1,8 +1,51 @@
 <?php
 
 use Illuminate\Http\Request;
+
 $app->get('/', function (Request $request) {
-    echo sha1("ObservatorioLaguna!?123");
+    //echo sha1("ObservatorioLaguna!?123");
+    echo sha1("1");
+});
+
+$app->get('/excel', function (Request $request) {
+    try {
+        $results = \Illuminate\Support\Facades\DB::table('app_question_answer')
+            ->select(
+                "app_surveys.title as Encuesta",
+                "app_questions.title as Pregunta",
+                "app_answers.title as Respuesta"
+            )->join("app_answers", "app_answers.id", "=", "app_question_answer.answer_id")
+            ->join("app_questions", "app_questions.id", "=", "app_question_answer.question_id")
+            ->join("app_surveys", "app_surveys.id", "=", "app_question_answer.survey_id")
+            ->where("app_question_answer.survey_id", "=", $request->get("id"))
+            ->orderBy('app_question_answer.id', 'DESC')->get();
+
+        $filename = $results[0]->Encuesta;
+        $i = 0;
+        header("Content-Type: application/xls");
+        header("Content-Disposition: attachment; filename=$filename.xls");
+        header("Pragma: no-cache");
+        header("Expires: 0");
+        foreach ($results as $result) {
+            if ($i > 0) {
+                break;
+            }
+            foreach ($result as $key => $item) {
+                echo $key . "\t";
+                $i++;
+            }
+        }
+        print("\n");
+        foreach ($results as $row) {
+            foreach ($result as $key => $item) {
+                echo $item . "\t";
+            }
+            print("\n");
+        }
+    } catch (exception $e) {
+        echo "<strong style='font-size: 1.4em;font-family: sans-serif;'>SIN RESPUESTAS</strong><br/>";
+        echo "<span style='font-size: 1.4em;font-family: sans-serif;color:darkred'>NO SE PUEDE GENERAR ARCHIVO</span>";
+    }
 });
 
 $app->post('/login', function (Request $request) {
@@ -20,6 +63,12 @@ $app->post('/login', function (Request $request) {
 $app->post('/questions/get', function (Request $request) {
     return \Illuminate\Support\Facades\DB::table('app_questions')
         ->where("survey_id", "=", $request->get("id"))
+        ->orderBy('id', 'DESC')->get();
+});
+
+$app->post('/answers/get', function (Request $request) {
+    return \Illuminate\Support\Facades\DB::table('app_answers')
+        ->where("question_id", "=", $request->get("id"))
         ->orderBy('id', 'DESC')->get();
 });
 
