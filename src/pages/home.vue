@@ -27,24 +27,26 @@
                     <img src="../assets/images/logo-sin-texto.png" width="34" height="34"/>
                 </div>
                 <div class="card-name">{{item.post_title}}</div>
-                <div class="card-date">Por: {{item.post_author}} {{item.post_date}}</div>
+                <div class="card-date">Por: {{item.post_author}}<br/> {{item.post_date}}</div>
             </f7-card-header>
             <f7-card-content>
-                <p v-html="item.post_content"></p>
                 <img v-if="item.post_mime_type=='image/jpeg' || item.post_mime_type=='image/png'"
-                     src="http://observatoriodelalaguna.org.mx/wp-content/uploads/2018/05/idbg-deuda-pib-estatal-durango-2007-17.jpg"
-                     width="100%"/>
-
+                     :src="item.post_url"
+                     style="width: 100%; cursor:pointer;"
+                     @click="photos = [item.post_url]"/>
+                <p v-else v-html="item.post_content.substr(0, 240) + '...'"></p>
             </f7-card-content>
             <f7-card-footer class="no-border">
-                <f7-link>
-                    <f7-button style="width: 100%" @click="openBrowser(item.post_url)">
-                        Ver más
-                    </f7-button>
+                <f7-link @click="openBrowser(item.post_url)">
+                    Ver más
                 </f7-link>
                 <f7-link popover-open=".popover-social-links" @click="setDataToShare(item)">Compartir</f7-link>
             </f7-card-footer>
         </f7-card>
+        <f7-photo-browser
+                :photos="photos"
+                ref="standalone"
+        ></f7-photo-browser>
         <f7-button style="margin-bottom: 20px;margin-top: 20px"
                    v-if="$store.state.application.postItems.length !== $store.state.application.tempPostItems.length"
                    @click="loadMoreItems">
@@ -78,6 +80,7 @@
         name: "home",
         data() {
             return {
+                photos: [],
                 title: 'Desde Nuestro sitio',
                 dataToShare: null,
             }
@@ -154,8 +157,14 @@
     iframe {
         width: 100% !important;
     }
+    div.title, a.link.back,.ios .navbar a.icon-only {
+        color: #e74b7e !important;
+    }
 </style>
 <style scoped>
+    .link{
+        color: #e74b7e !important;
+    }
     .card-header {
         display: block;
         padding: 10px;
@@ -172,5 +181,7 @@
         font-size: 13px;
         color: #8e8e93;
     }
-
+    div.title, a.link.back,.ios .navbar a.icon-only {
+        color: #e74b7e !important;
+    }
 </style>

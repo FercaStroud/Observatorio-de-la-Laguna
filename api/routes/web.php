@@ -13,7 +13,8 @@ $app->get('/excel', function (Request $request) {
             ->select(
                 "app_surveys.title as Encuesta",
                 "app_questions.title as Pregunta",
-                "app_answers.title as Respuesta"
+                "app_answers.title as Respuesta",
+                "app_questions.type as Tipo"
             )->join("app_answers", "app_answers.id", "=", "app_question_answer.answer_id")
             ->join("app_questions", "app_questions.id", "=", "app_question_answer.question_id")
             ->join("app_surveys", "app_surveys.id", "=", "app_question_answer.survey_id")
@@ -72,8 +73,7 @@ $app->post('/answers/get', function (Request $request) {
         ->orderBy('id', 'DESC')->get();
 });
 
-
-$app->post('/answers', function (Request $request) {
+$app->get('/answers', function (Request $request) {
     //$id = $request->get('id');
 
     return response()->json(
