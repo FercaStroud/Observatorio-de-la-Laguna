@@ -1,7 +1,7 @@
 <template>
     <f7-page name="home" class="bw-logo-bg" style="background-color: white;">
         <!-- Top Navbar -->
-        <f7-navbar :sliding="false">
+        <f7-navbar :sliding="true">
             <f7-nav-left>
                 <img v-if="$store.state.application.isLoading==false"
                      style="height: 35px;margin-top:-4px;margin-left: 8px"
@@ -33,7 +33,7 @@
                 <img v-if="item.post_mime_type=='image/jpeg' || item.post_mime_type=='image/png'"
                      :src="item.post_url"
                      style="width: 100%; cursor:pointer;"
-                     @click="photos = [item.post_url]"/>
+                     @click="openPhotoBrowser(item)"/>
                 <p v-else v-html="item.post_content.substr(0, 240) + '...'"></p>
             </f7-card-content>
             <f7-card-footer class="no-border">
@@ -43,10 +43,6 @@
                 <f7-link popover-open=".popover-social-links" @click="setDataToShare(item)">Compartir</f7-link>
             </f7-card-footer>
         </f7-card>
-        <f7-photo-browser
-                :photos="photos"
-                ref="standalone"
-        ></f7-photo-browser>
         <f7-button style="margin-bottom: 20px;margin-top: 20px"
                    v-if="$store.state.application.postItems.length !== $store.state.application.tempPostItems.length"
                    @click="loadMoreItems">
@@ -90,6 +86,17 @@
         mounted: function () {
         },
         methods: {
+            openPhotoBrowser(item) {
+                let photoBrowser = this.$f7.photoBrowser.create({
+                    photos : [
+                        {
+                            url: item.post_url,
+                            caption: item.post_title
+                        }
+                    ]
+                })
+                photoBrowser.open();
+            },
             setDataToShare(item) {
                 this.dataToShare = item
             },
@@ -157,14 +164,16 @@
     iframe {
         width: 100% !important;
     }
-    div.title, a.link.back,.ios .navbar a.icon-only {
+
+    div.title, a.link.back, .ios .navbar a.icon-only {
         color: #e74b7e !important;
     }
 </style>
 <style scoped>
-    .link{
+    .link {
         color: #e74b7e !important;
     }
+
     .card-header {
         display: block;
         padding: 10px;
@@ -181,7 +190,8 @@
         font-size: 13px;
         color: #8e8e93;
     }
-    div.title, a.link.back,.ios .navbar a.icon-only {
+
+    div.title, a.link.back, .ios .navbar a.icon-only {
         color: #e74b7e !important;
     }
 </style>

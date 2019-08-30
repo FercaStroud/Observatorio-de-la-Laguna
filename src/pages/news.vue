@@ -36,7 +36,6 @@
                     this.news = response.body;
 
                     if (this.news.length === 0) {
-                        this.news = [{text:'Sin noticias por el momento'}]
                         this.$f7.dialog.alert(' ', 'Sin datos disponibles');
                     }
                     this.$f7.dialog.close();

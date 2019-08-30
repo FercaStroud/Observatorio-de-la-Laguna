@@ -11,7 +11,7 @@ import createPersistedState from 'vuex-persistedstate';
 import vueResource from 'vue-resource'
 import Ripple from 'vue-ripple-directive'
 
-Ripple.color = 'rgba(255, 255, 255, 0.35)';
+Ripple.color = 'rgba(231, 75, 126, 0.35)';
 Ripple.zIndex = 55;
 Vue.directive('ripple', Ripple);
 
@@ -40,8 +40,8 @@ const store = new Vuex.Store({
         tempPostItems:[], //
         postItems: [], // all post / no limit
         config: {
-          api: 'https://app.observatoriodelalaguna.org.mx/api/public/',
-          //api: 'http://localhost:8000/',
+          //api: 'https://app.observatoriodelalaguna.org.mx/api/public/',
+          api: 'http://localhost:8000/',
           //api: 'http://192.168.1.73/public/',
         },
       },

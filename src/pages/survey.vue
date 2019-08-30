@@ -161,13 +161,11 @@
                     this.surveys = response.body;
 
                     if (this.surveys.length === 0) {
-                        this.surveys = [{text: 'Sin encuestas por el momento'}]
                         this.$f7.dialog.alert(' ', 'Sin datos disponibles');
                     }
                     this.$f7.dialog.close();
                 }, response => {
                     // error callback
-                    this.surveys = [{text: 'Sin encuestas por el momento'}]
                     this.$f7.dialog.alert(' ', 'Servidor no disponible');
                     console.log(response, 'error on getSurveys');
                     this.$f7.dialog.close();

@@ -25,7 +25,7 @@
                             </f7-card-content>
                         </f7-card>
                     </f7-link>
-                    <f7-link style="width: 100%" @click="getPostBy('INDICADORES')" panel-close>
+                    <f7-link style="width: 100%" href="/indicators" view=".view-main" panel-close>
                         <f7-card v-ripple class="menu-card" style="background-color: #39b777; width: 100%">
                             <f7-card-content>
                                 <f7-row>
@@ -37,7 +37,7 @@
                             </f7-card-content>
                         </f7-card>
                     </f7-link>
-                    <f7-link style="width: 100%" @click="getPostBy('PERCEPCION')" panel-close>
+                    <f7-link style="width: 100%" href="/documents" view=".view-main"  panel-close>
                         <f7-card v-ripple class="menu-card" style="background-color: #f99b40; width: 100%">
                             <f7-card-content>
                                 <f7-row>
@@ -134,20 +134,19 @@
                 f7params: {
                     id: 'go.observatorio', // App bundle ID
                     name: 'Observatorio de la Laguna', // App name
-                    theme: 'auto', // Automatic theme detection
+                    theme: 'ios', // Automatic theme detection
                     // App root data
                     data: function () {
                         return {};
                     },
-
+                    pushState: true,
                     // App routes
                     routes: routes,
                     // Enable panel left visibility breakpoint
                     panel: {
+                        swipe: 'right',
                         leftBreakpoint: 960,
                     },
-
-
                     // Input settings
                     input: {
                         scrollIntoViewOnFocus: this.$device.cordova && !this.$device.electron,
@@ -170,25 +169,32 @@
                 // Init cordova APIs (see cordova-app.js)
                 if (f7.device.cordova) {
                     cordovaApp.init(f7);
+                    vm.onDeviceReady();
                     vm.getPostBy('BLOG');
                 }
                 // Call F7 APIs here
-                cordova.plugins.firebase.messaging.requestPermission().then(function() {
+                cordova.plugins.firebase.messaging.requestPermission().then(function () {
                     console.log("Push messaging is allowed");
                 });
-                cordova.plugins.firebase.messaging.requestPermission({forceShow: true}).then(function() {
+                cordova.plugins.firebase.messaging.requestPermission({forceShow: true}).then(function () {
                     console.log("You'll get foreground notifications when a push message arrives");
                 });
-                cordova.plugins.firebase.messaging.onMessage(function(payload) {
+                cordova.plugins.firebase.messaging.onMessage(function (payload) {
                     console.log("New foreground FCM message: ", payload);
                 });
-                cordova.plugins.firebase.messaging.onBackgroundMessage(function(payload) {
+                cordova.plugins.firebase.messaging.onBackgroundMessage(function (payload) {
                     console.log("New background FCM message: ", payload);
                 });
             });
 
         },
         methods: {
+            onDeviceReady: function () {
+                document.addEventListener('backbutton', this.onBackKeyDown, false)
+            },
+            onBackKeyDown: function () {
+                window.history.length > 1 ? this.$f7router.back() : this.$f7router.navigate('/')
+            },
             getPostBy(arg) {
                 this.$f7.dialog.preloader('Cargando Datos');
                 this.$http.post(this.$store.state.application.config.api + 'posts', {
@@ -211,11 +217,11 @@
                     this.$f7.dialog.close();
                 });
             },
-            resetLastAndNextValues(){
+            resetLastAndNextValues() {
                 this.$store.state.application.lastItemIndex = null;
                 this.$store.state.application.nextItemIndex = null;
             },
-            setLastAndNextValues(last, next){
+            setLastAndNextValues(last, next) {
                 this.$store.state.application.lastItemIndex = last;
                 this.$store.state.application.nextItemIndex = next;
             },

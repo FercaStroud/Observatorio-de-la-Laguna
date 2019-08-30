@@ -45,3 +45,5 @@ cordova/www/
 
 # Production build
 www/
+/api/public/public/
+/.idea/

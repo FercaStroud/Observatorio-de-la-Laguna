@@ -2,10 +2,10 @@
 
 use Illuminate\Http\Request;
 
-$app->get('/', function (Request $request) {
-    //echo sha1("ObservatorioLaguna!?123");
-    echo sha1("1");
-});
+/*$app->get('/', function (Request $request) {
+    echo sha1("ObservatorioLaguna!?123");
+    //echo sha1("1");
+});*/
 
 $app->get('/excel', function (Request $request) {
     try {
