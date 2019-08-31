@@ -78,7 +78,7 @@
                                     <md-icon>playlist_add</md-icon>
                                     Agregar Respuesta
                                 </md-button>
-                                <md-button :href="$store.state.config.api + '/excel?id=' + item.id" target="_blank">
+                                <md-button :href="$store.state.config.api + 'excel?id=' + item.id" target="_blank">
                                     <md-icon>cloud_download</md-icon>
                                     Resultados
                                 </md-button>

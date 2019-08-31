@@ -7,8 +7,8 @@ export default new Vuex.Store({
   state: {
     userLogged: false,
     config: {
-      //api: 'https://app.observatoriodelalaguna.org.mx/api/public/',
-      api: 'http://localhost:8000/',
+      api: 'https://app.observatoriodelalaguna.org.mx/api/public/',
+      //api: 'http://localhost:8000/',
       //api: 'http://192.168.1.73/public/',
     },
   },

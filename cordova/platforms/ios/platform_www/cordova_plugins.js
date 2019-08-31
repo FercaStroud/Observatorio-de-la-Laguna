@@ -91,6 +91,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-whitelist": "1.3.4",
     "cordova-plugin-wkwebview-engine": "1.2.1",
     "cordova-plugin-wkwebview-file-xhr": "2.1.1",
-    "cordova-support-android-plugin": "1.0.1"
+    "cordova-support-android-plugin": "1.0.1",
+    "cordova-support-google-services": "1.3.1"
   };
 });

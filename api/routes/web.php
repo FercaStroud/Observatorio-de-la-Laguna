@@ -14,10 +14,11 @@ $app->get('/excel', function (Request $request) {
                 "app_surveys.title as Encuesta",
                 "app_questions.title as Pregunta",
                 "app_answers.title as Respuesta",
-                "app_questions.type as Tipo"
-            )->join("app_answers", "app_answers.id", "=", "app_question_answer.answer_id")
-            ->join("app_questions", "app_questions.id", "=", "app_question_answer.question_id")
-            ->join("app_surveys", "app_surveys.id", "=", "app_question_answer.survey_id")
+                "app_questions.type as Tipo",
+                "app_question_answer.other as Otro"
+            )->leftJoin("app_answers", "app_answers.id", "=", "app_question_answer.answer_id")
+            ->leftJoin("app_questions", "app_questions.id", "=", "app_question_answer.question_id")
+            ->leftJoin("app_surveys", "app_surveys.id", "=", "app_question_answer.survey_id")
             ->where("app_question_answer.survey_id", "=", $request->get("id"))
             ->orderBy('app_question_answer.id', 'DESC')->get();
 
@@ -38,7 +39,7 @@ $app->get('/excel', function (Request $request) {
         }
         print("\n");
         foreach ($results as $row) {
-            foreach ($result as $key => $item) {
+            foreach ($row as $key => $item) {
                 echo $item . "\t";
             }
             print("\n");
@@ -73,99 +74,34 @@ $app->post('/answers/get', function (Request $request) {
         ->orderBy('id', 'DESC')->get();
 });
 
-$app->get('/answers', function (Request $request) {
-    //$id = $request->get('id');
+$app->post('/answers', function (Request $request) {
+    $surveyId = $request->get('id');
 
-    return response()->json(
-        [
-            'id' => 0,
-            'title' => 'Economía en la Laguna',
-            'details' => 'Nos gustaría saber tu opinión acerca de lo que piensas de la economía en la región laguna.',
-            'questions' => [
-                [
-                    'id' => 0,
-                    'title' => '¿Cómo consideras el crecimiento económico en Torreón?',
-                    'vModel' => '*Selecciona una respuesta',
-                    'answers' => [
-                        [
-                            'id' => 0,
-                            'title' => 'No lo sé'
-                        ],
-                        [
-                            'id' => 1,
-                            'title' => 'Mucho crecimiento'
-                        ],
-                        [
-                            'id' => 2,
-                            'title' => 'Crecimiento moderado',
-                        ],
-                        [
-                            'id' => 3,
-                            'title' => 'Poco crecimiento',
-                        ],
-                        [
-                            'id' => 4,
-                            'title' => 'No ha crecido nada',
-                        ],
-                    ]
-                ],
-                [
-                    'id' => 1,
-                    'title' => '¿Cómo consideras el crecimiento económico en Gómez Palacio?',
-                    'vModel' => '',
-                    'answers' => [
-                        [
-                            'id' => 0,
-                            'title' => 'No lo sé'
-                        ],
-                        [
-                            'id' => 1,
-                            'title' => 'Mucho crecimiento'
-                        ],
-                        [
-                            'id' => 2,
-                            'title' => 'Crecimiento moderado',
-                        ],
-                        [
-                            'id' => 3,
-                            'title' => 'Poco crecimiento',
-                        ],
-                        [
-                            'id' => 4,
-                            'title' => 'No ha crecido nada',
-                        ],
-                    ]
-                ],
-                [
-                    'id' => 2,
-                    'title' => '¿Cómo consideras el crecimiento económico en Lerdo?',
-                    'vModel' => '',
-                    'answers' => [
-                        [
-                            'id' => 0,
-                            'title' => 'No lo sé'
-                        ],
-                        [
-                            'id' => 1,
-                            'title' => 'Mucho crecimiento'
-                        ],
-                        [
-                            'id' => 2,
-                            'title' => 'Crecimiento moderado',
-                        ],
-                        [
-                            'id' => 3,
-                            'title' => 'Poco crecimiento',
-                        ],
-                        [
-                            'id' => 4,
-                            'title' => 'No ha crecido nada',
-                        ],
-                    ]
-                ]
+    $survey = \Illuminate\Support\Facades\DB::table('app_surveys')
+        ->where('id', '=', $surveyId)->get();
+
+    $response = [
+        'survey_id' => $survey[0]->id,
+        'title' => $survey[0]->title,
+        'description' => $survey[0]->description,
+        'questions' => []
+    ];
+
+    foreach (\Illuminate\Support\Facades\DB::table('app_questions')
+                 ->where('app_questions.survey_id', '=', $surveyId)->get() as $question) {
+        array_push($response['questions'],
+            [
+                'question_id' => $question->id,
+                'title' => $question->title,
+                'type' => $question->type,
+                'vModel' => '*Selecciona una respuesta',
+                'answers' => \Illuminate\Support\Facades\DB::table('app_answers')
+                    ->where('app_answers.question_id', '=', $question->id)->get()
             ]
-        ]
-    );
+        );
+    }
+
+    return response()->json($response);
 });
 
 $app->post('/answer/add', function (Request $request) {
@@ -193,6 +129,27 @@ $app->post('/answer/add', function (Request $request) {
     } else {
         return response()->json(['success' => false]);
     }
+});
+
+$app->post('/questionanswer/add', function (Request $request) {
+    $questions = $request->get("questions");
+    $surveyId = $request->get("survey_id");
+
+    $ok = true;
+    foreach ($questions as $question) {
+        $ok = \Illuminate\Support\Facades\DB::table('app_question_answer')->insert([
+            'answer_id' => $question['vModel'],
+            'question_id' => $question['question_id'],
+            'survey_id' => $surveyId,
+            'other' => $question['vModel'],
+        ]);
+
+        if($ok === false){
+            return response()->json(['success' => false]);
+        }
+    }
+
+    return response()->json(['success' => true]);
 });
 
 $app->post('/surveys', function () {
