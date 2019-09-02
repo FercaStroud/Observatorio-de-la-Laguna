@@ -45,6 +45,14 @@ group = 'org.apache.cordova'
 version = '8.0.0'
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('/Users/ferca/Projects/Observatorio-de-la-Laguna/APP KEYS/private_key.pepk')
+            keyAlias = 'observatoriokeystore'
+            storePassword 'observatoriokeystore!?182'
+            keyPassword 'observatoriokeystore!?182'
+        }
+    }
     compileSdkVersion cdvCompileSdkVersion
     buildToolsVersion cdvBuildToolsVersion
 

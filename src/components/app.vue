@@ -82,12 +82,12 @@
                         <hr/>
                         <p>
                             <strong>Teléfono</strong> <br/>
-                            <f7-button style="text-align: left">871-718-98-25</f7-button>
+                            <f7-button  @click="openBrowser('tel:8717189825')" style="text-align: left">871-718-98-25</f7-button>
                         </p>
                         <hr/>
                         <p>
                             <strong>Email</strong> <br/>
-                            <f7-button style="text-align: left">contacto@ccilaguna.org.mx</f7-button>
+                            <f7-button @click="openBrowser('mailto:contacto@ccilaguna.org.mx')" style="text-align: left">contacto@ccilaguna.org.mx</f7-button>
                         </p>
                     </f7-block>
                 </f7-page>
@@ -189,6 +189,10 @@
 
         },
         methods: {
+            openBrowser(url) {
+                let options = "location=no,clearcache=yes,clearsessioncache=yes,zoom=yes,EnableViewPortScale=yes"
+                let ref = cordova.InAppBrowser.open(url, '_system', options);
+            },
             onDeviceReady: function () {
                 document.addEventListener('backbutton', this.onBackKeyDown, false)
             },
@@ -210,6 +214,8 @@
                         this.$f7.dialog.alert(' ', 'Sin datos disponibles');
                     }
                     this.$f7.dialog.close();
+                    this.$f7.dialog.alert('¡Blog actualizado!', 'Éxito');
+
                 }, response => {
                     this.$f7.dialog.alert(' ', 'Servidor no disponible');
                     // error callback
