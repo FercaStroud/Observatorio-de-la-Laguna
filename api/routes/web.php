@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
     //echo sha1("1");
 });*/
 
+$app->get('/questions/get', function (Request $request) {
+    return \Illuminate\Support\Facades\DB::table('app_questions')
+        ->where("survey_id", "=", $request->get("id"))
+        ->orderBy('id', 'DESC')->get();
+});
+
 $app->get('/excel', function (Request $request) {
     try {
         $results = \Illuminate\Support\Facades\DB::table('app_question_answer')
@@ -62,13 +68,7 @@ $app->post('/login', function (Request $request) {
     }
 });
 
-$app->post('/questions/get', function (Request $request) {
-    return \Illuminate\Support\Facades\DB::table('app_questions')
-        ->where("survey_id", "=", $request->get("id"))
-        ->orderBy('id', 'DESC')->get();
-});
-
-$app->post('/answers/get', function (Request $request) {
+$app->get('/answers/get', function (Request $request) {
     return \Illuminate\Support\Facades\DB::table('app_answers')
         ->where("question_id", "=", $request->get("id"))
         ->orderBy('id', 'DESC')->get();
@@ -168,12 +168,14 @@ $app->post('/survey/add', function (Request $request) {
     }
 });
 
-$app->post('survey/status/', function (Request $request) {
+$app->get('survey/status/', function (Request $request) {
+    $status = $request->get("status");
+
     if (\Illuminate\Support\Facades\DB::table('app_surveys')->where("id", "=", $request->get("id"))
-        ->update(['status' => $request->get("status")])) {
-        return response()->json(['response' => 'true']);
+        ->update(['status' => $status])) {
+        return response()->json(['success' => 'true']);
     } else {
-        return response()->json(['response' => 'false']);
+        return response()->json(['success' => 'false']);
     }
 });
 

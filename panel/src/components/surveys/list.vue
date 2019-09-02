@@ -25,76 +25,77 @@
             <div class="md-layout md-gutter md-alignment-center">
                 <div class="md-layout-item">
                     <md-card style="margin-top: 20px; background-color: rgb(255,255,255)"
-                              v-for="(item, index) in items" :key="index">
-                            <md-card-header>
-                                <div class="md-title">{{item.title}}</div>
-                            </md-card-header>
+                             v-for="(item, index) in items" :key="index">
+                        <md-card-header>
+                            <div class="md-title">{{item.title}}</div>
+                        </md-card-header>
 
-                            <md-card-content>
-                                {{item.description}}
+                        <md-card-content>
+                            {{item.description}}
 
-                                <div>
-                                    <md-button @click="getQuestionsById(item.id)">
+                            <div>
+                                <md-button @click="getQuestionsById(item.id)">
+                                    <md-icon>list_alt</md-icon>
+                                    Ver preguntas en esta encuesta
+                                </md-button>
+                            </div>
+
+                            <div v-for="(question,index) in questions[item.id]" :key="index"
+                                 style="background-color: #fcfcfc; padding: 10px; margin-top: 10px">
+
+                                <div v-if="question.type === 'TEXT'" style="">
+                                    <strong>Pregunta: </strong>{{ question.title }} <br/>
+                                    <strong>Tipo: </strong>{{ question.type }} <br/>
+                                </div>
+                                <div v-else style="width: 50%; float: left">
+                                    <strong>Pregunta: </strong>{{ question.title }} <br/>
+                                    <strong>Tipo: </strong>{{ question.type }} <br/>
+                                </div>
+
+                                <div v-if="question.type !== 'TEXT'"
+                                     style="width: 50%; float: left; border-left: 1px solid black">
+                                    <strong
+                                            style="margin-left: 10px">Respuestas: </strong><br/>
+                                    <ul
+                                            style="margin-left: 10px">
+                                        <li v-for="(item, index) in answers[question.id]" :key="index">
+                                            {{ item.title }}
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div v-show="question.type !== 'TEXT'">
+                                    <md-button @click="getAnswersById(question.id)"
+                                    >
                                         <md-icon>list_alt</md-icon>
-                                        Ver preguntas en esta encuesta
+                                        Ver respuestas en esta pregunta
                                     </md-button>
                                 </div>
+                                <hr/>
+                            </div>
+                        </md-card-content>
 
-                                <div v-for="(question,index) in questions[item.id]" :key="index"
-                                     style="background-color: #fcfcfc; padding: 10px; margin-top: 10px">
-
-                                    <div v-if="question.type === 'TEXT'" style="">
-                                        <strong>Pregunta: </strong>{{ question.title }} <br/>
-                                        <strong>Tipo: </strong>{{ question.type }} <br/>
-                                    </div>
-                                    <div v-else style="width: 50%; float: left">
-                                        <strong>Pregunta: </strong>{{ question.title }} <br/>
-                                        <strong>Tipo: </strong>{{ question.type }} <br/>
-                                    </div>
-
-                                    <div  v-if="question.type !== 'TEXT'"  style="width: 50%; float: left; border-left: 1px solid black">
-                                        <strong
-                                                style="margin-left: 10px">Respuestas: </strong><br/>
-                                        <ul
-                                            style="margin-left: 10px">
-                                            <li v-for="(item, index) in answers[question.id]" :key="index">
-                                                {{ item.title }}
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div v-show="question.type !== 'TEXT'">
-                                        <md-button @click="getAnswersById(question.id)"
-                                        >
-                                            <md-icon>list_alt</md-icon>
-                                            Ver respuestas en esta pregunta
-                                        </md-button>
-                                    </div>
-                                    <hr/>
-                                </div>
-                            </md-card-content>
-
-                            <md-card-actions>
-                                <md-button @click="selectedAnswer = item; answerAddDialog = true;">
-                                    <md-icon>playlist_add</md-icon>
-                                    Agregar Respuesta
-                                </md-button>
-                                <md-button :href="$store.state.config.api + 'excel?id=' + item.id" target="_blank">
-                                    <md-icon>cloud_download</md-icon>
-                                    Resultados
-                                </md-button>
-                                <md-button v-if="item.status" @click="changeStatus(item.id, item.status)">
-                                    <md-icon>pause_circle_filled</md-icon>
-                                    Deshabilitar
-                                </md-button>
-                                <md-button v-else @click="changeStatus(item.id, item.status)">
-                                    <md-icon>play_circle_filled</md-icon>
-                                    Habilitar
-                                </md-button>
-                                <md-button @click="deleteItemById(item.id)">
-                                    <md-icon>delete_forever</md-icon>
-                                    Eliminar
-                                </md-button>
-                            </md-card-actions>
+                        <md-card-actions>
+                            <md-button @click="selectedAnswer = item; answerAddDialog = true;">
+                                <md-icon>playlist_add</md-icon>
+                                Agregar Respuesta
+                            </md-button>
+                            <md-button :href="$store.state.config.api + 'excel?id=' + item.id" target="_blank">
+                                <md-icon>cloud_download</md-icon>
+                                Resultados
+                            </md-button>
+                            <md-button v-if="item.status == 1" @click="changeStatus(item.id, item.status)">
+                                <md-icon>pause_circle_filled</md-icon>
+                                Deshabilitar
+                            </md-button>
+                            <md-button v-if="item.status == 0" @click="changeStatus(item.id, item.status)">
+                                <md-icon>play_circle_filled</md-icon>
+                                Habilitar
+                            </md-button>
+                            <md-button @click="deleteItemById(item.id)">
+                                <md-icon>delete_forever</md-icon>
+                                Eliminar
+                            </md-button>
+                        </md-card-actions>
                     </md-card>
                 </div>
             </div>
@@ -177,30 +178,28 @@
             }
         },
         created: function () {
-        },
-        mounted: function () {
             this.$root.$on('add-update-question', question => {
                 this.sendAnswerForm(question)
             });
             this.$root.$on('cancel-question', question => {
                 this.answerAddDialog = false
             });
+        },
+        mounted: function () {
+
             this.getItemsFromServer()
         },
         methods: {
             getQuestionsById(id) {
                 this.loading = true;
-                this.$http.post(this.$store.state.config.api + 'questions/get/', {
-                    id: id
-                }).then(response => {
+                this.$http.get(this.$store.state.config.api + 'questions/get?id=' + id).then(response => {
                     this.loading = false;
-
                     this.questions[id] = response.body
 
                 }, response => {
                     // error callback
                     this.answerAddDialog = false
-                    console.log(response, 'error on sendAnswerForm');
+                    console.log(response, 'error on getQuestionsById');
                     this.loading = false;
                     this.bgSnackbar = '#e74b7e'
                     this.cSnackbar = '#ffffff'
@@ -210,9 +209,7 @@
             },
             getAnswersById(id) {
                 this.loading = true;
-                this.$http.post(this.$store.state.config.api + 'answers/get/', {
-                    id: id
-                }).then(response => {
+                this.$http.get(this.$store.state.config.api + 'answers/get?id=' + id).then(response => {
                     this.loading = false;
 
                     this.answers[id] = response.body
@@ -220,7 +217,7 @@
                 }, response => {
                     // error callback
                     this.answerAddDialog = false
-                    console.log(response, 'error on sendAnswerForm');
+                    console.log(response, 'error on getAnswersById');
                     this.loading = false;
                     this.bgSnackbar = '#e74b7e'
                     this.cSnackbar = '#ffffff'
@@ -234,12 +231,13 @@
                 let answers = question.options
 
                 this.loading = true;
-                this.$http.post(this.$store.state.config.api + 'answer/add/', {
+                this.$http.post(this.$store.state.config.api + 'answer/add', {
                     id: this.selectedAnswer.id,
                     type: type,
                     title: title,
                     answers: answers,
                 }).then(response => {
+                    console.log(response)
                     this.answerAddDialog = false
                     this.loading = false;
                     this.showSnackbar = true
@@ -257,20 +255,22 @@
                     this.snackBarMessage = 'Ha ocurrido un error, intente más tarde.'
                 });
             },
-            changeStatus(id, status) {
+            changeStatus: function (id, status) {
+                if (status == 0) status = 1; else {
+                    status = 0
+                }
                 this.loading = true;
-                this.$http.post(this.$store.state.config.api + 'survey/status/', {
-                    id: id, status: !status
-                }).then(response => {
+                let vm = this
+                this.$http.get(this.$store.state.config.api + 'survey/status?id=' + id + '&status=' + status).then(response => {
                     this.loading = false;
-                    this.getItemsFromServer();
+                    vm.getItemsFromServer();
                     this.showSnackbar = true
                     this.bgSnackbar = '#50ac66'
                     this.cSnackbar = '#ffffff'
                     this.snackBarMessage = 'Estatus cambiado con éxito.'
                 }, response => {
                     // error callback
-                    console.log(response, 'error on deleteNewsById/Confirm()');
+                    console.log(response, 'error on changeStatus()');
                     this.loading = false;
                     this.bgSnackbar = '#e74b7e'
                     this.cSnackbar = '#ffffff'
@@ -295,7 +295,7 @@
                     this.snackBarMessage = 'Elemento eliminado con éxito.'
                 }, response => {
                     // error callback
-                    console.log(response, 'error on deleteNewsById/Confirm()');
+                    console.log(response, 'error on onConfirm');
                     this.loading = false;
                     this.bgSnackbar = '#e74b7e'
                     this.cSnackbar = '#ffffff'

@@ -2,19 +2,19 @@
     <md-list style="margin-top: 10px" :md-expand-single="true">
         <md-list-item md-expand>
             <md-icon>poll</md-icon>
-            <span class="md-list-item-text">Indicadores</span>
+            <span class="md-list-item-text">Percepción</span>
             <md-list slot="md-expand">
                 <md-list-item>
                     <router-link to="/indicador/nuevo/">
                         <md-button style="text-transform: none; width:200px;">
-                            Agregar Indicador
+                            Agregar Documento
                         </md-button>
                     </router-link>
                 </md-list-item>
                 <md-list-item>
                     <router-link to="/indicadores/lista/">
                         <md-button style="text-transform: none; width:200px;">
-                            Ver Indicadores
+                            Ver Documentos
                         </md-button>
                     </router-link>
                 </md-list-item>

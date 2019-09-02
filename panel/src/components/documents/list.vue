@@ -3,7 +3,7 @@
         <md-app-toolbar class="md-primary" style="background-color: white">
             <span class="md-title">
                 <md-icon>poll</md-icon>
-                Indicadores - Listado
+                Percepción - Listado
             </span>
         </md-app-toolbar>
 
@@ -20,7 +20,7 @@
                         style="stroke:#e74b7e !important;"
                         :md-diameter="20"
                         :md-stroke="10" md-mode="indeterminate"></md-progress-spinner>
-                Todos los Indicadores
+                Todos los Documentos
             </h2>
             <md-list class="md-triple-line">
                 <md-list-item style="border-bottom: 1px solid #569cb0;"

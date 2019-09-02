@@ -82,7 +82,7 @@
                         <hr/>
                         <p>
                             <strong>Teléfono</strong> <br/>
-                            <f7-button style="text-align: left">718-98-25</f7-button>
+                            <f7-button style="text-align: left">871-718-98-25</f7-button>
                         </p>
                         <hr/>
                         <p>
