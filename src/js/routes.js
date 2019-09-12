@@ -1,4 +1,5 @@
 import HomePage from '../pages/home.vue';
+import BlogPage from '../pages/blog.vue';
 import SurveyPage from '../pages/survey.vue';
 import NewsPage from '../pages/news.vue';
 import DocumentsPage from '../pages/documents.vue';
@@ -9,6 +10,10 @@ let routes = [
   {
     path: '/',
     component: HomePage,
+  },
+  {
+    path: '/blog',
+    component: BlogPage,
   },
   {
     path: '/survey',

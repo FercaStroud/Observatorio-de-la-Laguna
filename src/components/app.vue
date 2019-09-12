@@ -18,9 +18,6 @@
                                     <f7-col>
                                         <span class="menu-text">NOTICIAS</span>
                                     </f7-col>
-                                    <f7-col>
-                                        <img class="icon-navbar" src="../assets/images/logo-sin-texto.png">
-                                    </f7-col>
                                 </f7-row>
                             </f7-card-content>
                         </f7-card>
@@ -32,7 +29,6 @@
                                     <f7-col>
                                         <span class="menu-text">INDICADORES</span>
                                     </f7-col>
-                                    <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
                                 </f7-row>
                             </f7-card-content>
                         </f7-card>
@@ -44,7 +40,6 @@
                                     <f7-col>
                                         <span class="menu-text">PERCEPCIÓN</span>
                                     </f7-col>
-                                    <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
                                 </f7-row>
                             </f7-card-content>
                         </f7-card>
@@ -56,7 +51,6 @@
                                     <f7-col>
                                         <span class="menu-text">BLOG</span>
                                     </f7-col>
-                                    <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
                                 </f7-row>
                             </f7-card-content>
                         </f7-card>
@@ -68,7 +62,6 @@
                                     <f7-col>
                                         <span class="menu-text">ENCUESTAS</span>
                                     </f7-col>
-                                    <f7-col><img class="icon-navbar" src="../assets/images/logo-sin-texto.png"></f7-col>
                                 </f7-row>
                             </f7-card-content>
                         </f7-card>

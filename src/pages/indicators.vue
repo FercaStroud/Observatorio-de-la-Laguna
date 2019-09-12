@@ -5,8 +5,6 @@
         <f7-card v-for="(item, index) in items" :key="index">
             <div @click="openIndicator(item)">
                 <f7-card-content v-ripple style="font-size: 1.2em">
-                    <img style="position: relative;top: 4px;padding-right: 5px;width: 20%;margin-left: 41%;"
-                         src="../assets/images/logo-sin-texto.png"/>
                     <div style="text-align: center; font-size: 1.6em">{{item.city}}</div>
                 </f7-card-content>
             </div>
