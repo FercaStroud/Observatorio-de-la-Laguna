@@ -17,7 +17,7 @@
       <library-update>
         <group-id>androidx.core</group-id>
         <name>core</name>
-        <version>1.2.0-alpha03</version>
+        <version>1.2.0-alpha04</version>
         <repository>Google</repository>
       </library-update>
       <library-update>
@@ -27,17 +27,16 @@
         <repository>JCenter,Maven Central</repository>
       </library-update>
     </library-updates>
-    <last-search-timestamp>1567462003473</last-search-timestamp>
+    <last-search-timestamp>1568335789040</last-search-timestamp>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73ac7ba1-ae18-488a-94d0-b99ae0c3376e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assets-src/cordova-android-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../assets-src/cordova-android-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assets-src/cordova-ios-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../assets-src/cordova-ios-icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/CordovaLib/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/observatoriodelalaguna/org/mx/test/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/observatoriodelalaguna/org/mx/test/BuildConfig.java" afterDir="false" />
@@ -50,15 +49,46 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debugAndroidTest/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debugAndroidTest/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/metadata_feature_manifest/debug/processDebugManifest/metadata-feature/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/metadata_feature_manifest/debug/processDebugManifest/metadata-feature/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app.aab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-ldpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-ldpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/ferca.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna.xcworkspace/xcuserdata/ferca.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna.xcworkspace/xcuserdata/ferca.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-1024.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-1024.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-20.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-20@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-20@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-20@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-24@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-24@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-27.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-27.5@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-29.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-29@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-29@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-40.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-44@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-44@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-50@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-50@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-60@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-60@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-72.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-72@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-72@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-76.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-83.5@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-86@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-86@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-98@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon-98@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Images.xcassets/AppIcon.appiconset/icon@2x.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Observatorio de la Laguna-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/Observatorio de la Laguna-Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/cordova/build-extras.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/cordova/build-extras.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Observatorio de la Laguna/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../src/components/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../../src/components/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../src/js/app.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,10 +118,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="13" />
-    <option name="y" value="37" />
-    <option name="width" value="1400" />
-    <option name="height" value="796" />
+    <option name="x" value="18" />
+    <option name="y" value="118" />
+    <option name="width" value="1087" />
+    <option name="height" value="678" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -99,10 +129,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -114,11 +159,13 @@
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1567461913098" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1568335727270" />
   </component>
   <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="MODULE_TAB" value="Default Config" />
+    <option name="BUILD_VARIANTS_TAB" value="Build Types" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="release" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -208,10 +255,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="13" y="37" width="1400" height="796" extended-state="0" />
+    <frame x="18" y="118" width="1087" height="678" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13328424" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18181819" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -222,13 +269,13 @@
       <window_info anchor="bottom" id="Run" order="0" />
       <window_info anchor="bottom" id="Logcat" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32954547" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32935154" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.2883959" />
       <window_info anchor="bottom" id="Debug" order="8" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />

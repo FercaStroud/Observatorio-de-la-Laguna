@@ -165,7 +165,7 @@ task cdvPrintProps {
 
 android {
     defaultConfig {
-        versionCode = 10001
+        versionCode = 10003
         applicationId privateHelpers.extractStringFromManifest("package")
         minSdkVersion 21
         targetSdkVersion 28

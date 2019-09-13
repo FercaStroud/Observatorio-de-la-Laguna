@@ -163,7 +163,6 @@
                 if (f7.device.cordova) {
                     cordovaApp.init(f7);
                     vm.onDeviceReady();
-                    vm.getPostBy('BLOG');
                 }
                 // Call F7 APIs here
                 cordova.plugins.firebase.messaging.requestPermission().then(function () {
