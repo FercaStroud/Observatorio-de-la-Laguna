@@ -28,6 +28,14 @@
                         <label>Noticia</label>
                         <md-textarea  md-counter="240" style="border-bottom: 1px solid black" v-model="text"></md-textarea>
                     </md-field>
+                    <md-field style="background-color: #ffffff">
+                        <label>URL del enlace</label>
+                        <md-input md-counter="440" style="border-bottom: 1px solid black" v-model="post_url"></md-input>
+                    </md-field>
+                    <md-field style="background-color: #ffffff">
+                        <label>Nombre del Enlace</label>
+                        <md-input md-counter="100" style="border-bottom: 1px solid black" v-model="url_description"></md-input>
+                    </md-field>
                     <md-button @click="sendForm" class="md-primary">Añadir</md-button>
                 </div>
             </div>
@@ -53,13 +61,17 @@
                 cSnackbar: '',
                 loading: false,
                 text: '',
+                post_url: '',
+                url_description: '',
             }
         },
         methods: {
             sendForm() {
                 this.loading = true;
                 this.$http.post(this.$store.state.config.api + 'news/add', {
-                    text: this.text
+                    text: this.text,
+                    post_url: this.post_url,
+                    url_description: this.url_description
                 }).then(response => {
                     this.loading = false;
                     this.showSnackbar = true

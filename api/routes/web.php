@@ -144,7 +144,7 @@ $app->post('/questionanswer/add', function (Request $request) {
             'other' => $question['vModel'],
         ]);
 
-        if($ok === false){
+        if ($ok === false) {
             return response()->json(['success' => false]);
         }
     }
@@ -231,9 +231,12 @@ $app->post('/news', function () {
 });
 
 $app->post('/news/add', function (Request $request) {
-    if (\Illuminate\Support\Facades\DB::table('app_news')->insert(
-        ['text' => $request->get('text')]
-    )) {
+    if (\Illuminate\Support\Facades\DB::table('app_news')->insert([
+        'text' => $request->get('text'),
+        'url_description' => $request->get('url_description'),
+        'post_url' => $request->get('post_url')
+    ])
+    ) {
         return response()->json(['success' => true]);
     } else {
         return response()->json(['success' => false]);

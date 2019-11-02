@@ -83,7 +83,7 @@
         <f7-block>
             <p>
                 <strong>Dirección</strong> <br/>
-                C. Río Amazonas #740 Colonia Estrella
+                C. Río Amazonas #740 Colonia Estrella, Torreón, Coahuila.
             </p>
             <hr/>
             <p>
@@ -122,7 +122,7 @@
                 }).then(response => {
                     this.$store.state.application.tempPostItems = []
                     this.$store.state.application.postItems = response.body;
-
+                    
                     this.$store.state.application.lastItemIndex = 0;
                     this.$store.state.application.nextItemIndex = 15;
                     this.limitPost();

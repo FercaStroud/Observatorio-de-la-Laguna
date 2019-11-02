@@ -28,7 +28,12 @@
                         <img style="width: 100%;" src="../../assets/images/logo-sin-texto.png" alt="logo">
                     </md-avatar>
                     <div class="md-list-item-text" style="white-space: initial;">
+                        <strong>TEXTO NOTICIA:</strong>
                         <p>{{item.text}}</p>
+                        <strong>URL NOTICIA:</strong>
+                        <p>{{item.post_url}}</p>
+                        <strong>TÍTULO DEL ENLACE:</strong>
+                        <p>{{item.url_description}}</p>
                     </div>
                     <md-button class="md-icon-button md-list-action" @click="deleteNewsById(item.id)">
                         <md-icon class="delete-button">delete_forever</md-icon>

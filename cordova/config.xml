@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!--<widget id="observatoriodelalaguna.org.mx" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">-->
 <!--<widget id="go.orgmxobservatoriodelalaguna" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">-->
-<widget id="go.orgmxobservatoriodelalaguna" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="observatoriodelalaguna.org.mx" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Observatorio de la Laguna</name>
     <description>
         Aplicación hecha por Gorilas Online para el Observatorio de la Laguna.

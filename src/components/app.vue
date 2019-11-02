@@ -70,7 +70,7 @@
                     <f7-block>
                         <p>
                             <strong>Dirección</strong> <br/>
-                            C. Río Amazonas #740 Colonia Estrella
+                            C. Río Amazonas #740 Colonia Estrella, Torreón, Coahuila.
                         </p>
                         <hr/>
                         <p>

@@ -14,8 +14,8 @@ if ($conn->connect_error) {
 
 // sql to create table
 $queries = [
-    'alter table app_question_answer add other int null;',
-    'alter table app_question_answer modify other text null;',
+    'alter table app_news add url_description varchar(100) null;',
+    'alter table app_news add post_url varchar(100) null;',
     /*    "create table app_answers (id int auto_increment, question_id int not null, title varchar(140) not null, constraint app_answers_id_uindex unique (id));",
     "alter table app_answers add primary key (id);",
     "create table app_documents (id int auto_increment primary key, title varchar(140) not null, src varchar(40) not null);",
@@ -25,7 +25,10 @@ $queries = [
     "alter table app_questions add primary key (id);",
     "create table app_surveys ( id int auto_increment primary key, title varchar(140) not null, description varchar(240) null, status tinyint default 0 not null );",
     "create table app_users ( id int auto_increment primary key, username varchar(15) not null, password varchar(50) not null );",
-    'INSERT INTO app_users (username, password) VALUES ("admin","3c94290b29b4bce707beb0f0227671c866a6b5cd");'
+    'INSERT INTO app_users (username, password) VALUES ("admin","3c94290b29b4bce707beb0f0227671c866a6b5cd");',
+
+    'alter table app_question_answer add other int null;',
+    'alter table app_question_answer modify other text null;',
 */
 ];
 foreach ($queries as $key=>$sql) {

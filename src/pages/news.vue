@@ -9,6 +9,11 @@
             <f7-card-content>
                 {{item.text}}
             </f7-card-content>
+            <f7-card-footer>
+                <f7-link @click="openBrowser(item.post_url)">
+                    {{ item.url_description }}
+                </f7-link>
+            </f7-card-footer>
         </f7-card>
 
     </f7-page>

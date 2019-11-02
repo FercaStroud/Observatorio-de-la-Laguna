@@ -23,11 +23,7 @@
                 <div class="card-date">Por: {{item.post_author}}<br/> {{item.post_date}}</div>
             </f7-card-header>
             <f7-card-content>
-                <img v-if="item.post_mime_type=='image/jpeg' || item.post_mime_type=='image/png'"
-                     :src="item.post_url"
-                     style="width: 100%; cursor:pointer;"
-                     @click="openPhotoBrowser(item)"/>
-                <p v-else v-html="item.post_content.substr(0, 240) + '...'"></p>
+                <p v-html="item.post_content.substr(0, 240) + '...'"></p>
             </f7-card-content>
             <f7-card-footer class="no-border">
                 <f7-link @click="openBrowser(item.post_url)">
