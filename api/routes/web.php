@@ -263,6 +263,7 @@ $app->post('/posts', function (Request $request) {
                     "w47fa_posts.post_mime_type"
                 )->join("w47fa_users", "w47fa_posts.post_author", '=', "w47fa_users.ID")
                 ->where("w47fa_posts.post_status", "LIKE", "publish")
+                ->where("w47fa_posts.post_mime_type", "=", "")
                 ->where("w47fa_posts.post_type", "LIKE", "post")
                 ->orderBy('post_date', 'desc')->get();
             break;

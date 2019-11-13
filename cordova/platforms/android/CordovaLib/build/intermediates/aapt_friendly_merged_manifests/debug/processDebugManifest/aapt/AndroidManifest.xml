@@ -19,7 +19,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.apache.cordova"
-    android:versionCode="10004"
+    android:versionCode="10005"
     android:versionName="1.0" >
 
     <uses-sdk android:minSdkVersion="19" />
