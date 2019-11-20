@@ -56,7 +56,7 @@
             },
             openBrowser(url) {
                 let options = "location=no,clearcache=yes,clearsessioncache=yes,zoom=yes,EnableViewPortScale=yes"
-                let ref = cordova.InAppBrowser.open(url, '_system', options);
+                let ref = cordova.InAppBrowser.open(url, '_self', options);
             },
         }
     }
