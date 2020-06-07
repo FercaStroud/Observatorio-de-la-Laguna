@@ -248,6 +248,44 @@ $app->post('/news/delete', function (Request $request) {
         ->where('id', '=', $request->get('id'))->delete();
 });
 
+$app->post('/infographics', function () {
+    return \Illuminate\Support\Facades\DB::table('app_infographics')
+        ->orderBy('id', 'DESC')->get();
+});
+$app->post('/infographics/add', function (Request $request) {
+    $random_string = function ($length, $directory = '', $extension = '') {
+        $dir = !empty($directory) && is_dir($directory) ? $directory : dirname(__FILE__);
+        do {
+            $key = '';
+            $keys = array_merge(range(0, 9), range('a', 'z'));
+            for ($i = 0; $i < $length; $i++) {
+                $key .= $keys[array_rand($keys)];
+            }
+        } while (file_exists($dir . '/' . $key . (!empty($extension) ? '.' . $extension : '')));
+        return $key . (!empty($extension) ? '.' . $extension : '');
+    };
+    $fileName = $random_string(40, '', $request->file('src')->getClientOriginalExtension());
+    $destinationPath = "images/infographics/";
+    if ($request->file('src') != null) {
+        $request->file('src')->move($destinationPath, $fileName);
+    } else {
+        return response()->json(['success' => false]);
+    }
+    if (\Illuminate\Support\Facades\DB::table('app_infographics')->insert([
+        'title' => $request->get('title'),
+        'src' => $fileName,
+    ])
+    ) {
+        return response()->json(['success' => true]);
+    } else {
+        return response()->json(['success' => false]);
+    }
+});
+$app->post('/infographics/delete', function (Request $request) {
+    return \Illuminate\Support\Facades\DB::table('app_infographics')
+        ->where('id', '=', $request->get('id'))->delete();
+});
+
 $app->post('/posts', function (Request $request) {
     switch ($request->get('postType')) {
         case "BLOG":

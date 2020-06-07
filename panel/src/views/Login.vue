@@ -47,8 +47,8 @@
                 bgSnackbar: '',
                 cSnackbar: '',
                 loading: false,
-                username: '',
-                password: ''
+                username: 'admin',
+                password: 'ObservatorioLaguna!?123'
             }
         },
         methods: {

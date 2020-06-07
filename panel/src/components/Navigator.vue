@@ -21,6 +21,26 @@
             </md-list>
         </md-list-item>
         <md-list-item md-expand>
+            <md-icon>poll</md-icon>
+            <span class="md-list-item-text">Infografías</span>
+            <md-list slot="md-expand">
+                <md-list-item>
+                    <router-link to="/infografias/nueva/">
+                        <md-button style="text-transform: none; width:200px;">
+                            Agregar Infografía
+                        </md-button>
+                    </router-link>
+                </md-list-item>
+                <md-list-item>
+                    <router-link to="/infografias/lista/">
+                        <md-button style="text-transform: none; width:200px;">
+                            Ver Infografías
+                        </md-button>
+                    </router-link>
+                </md-list-item>
+            </md-list>
+        </md-list-item>
+        <md-list-item md-expand>
             <md-icon>speaker_notes</md-icon>
             <span class="md-list-item-text">Encuestas</span>
             <md-list slot="md-expand">

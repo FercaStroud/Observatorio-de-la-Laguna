@@ -1,0 +1,2 @@
+INSERT INTO webandpr_vvTjz1Bk.app_surveys (id, title, description, status) VALUES (17, 'Percepción 2019', '', 0);
+INSERT INTO webandpr_vvTjz1Bk.app_surveys (id, title, description, status) VALUES (20, 'REGIDORMX LAGUNA', '', 1);

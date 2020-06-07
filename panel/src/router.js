@@ -12,6 +12,16 @@ export default new Router({
             component: () => import('./views/Login.vue')
         },
         {
+            path: '/infografias/nueva/',
+            name: 'addInfographic',
+            component: () => import('./components/infographics/add.vue')
+        },
+        {
+            path: '/infografias/lista/',
+            name: 'listInfographic',
+            component: () => import('./components/infographics/add.vue')
+        },
+        {
             path: '/encuesta/nueva',
             name: 'addSurvey',
             component: () => import('./components/surveys/add.vue')

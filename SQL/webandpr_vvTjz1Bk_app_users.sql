@@ -1,0 +1,1 @@
+INSERT INTO webandpr_vvTjz1Bk.app_users (id, username, password) VALUES (1, 'admin', '3c94290b29b4bce707beb0f0227671c866a6b5cd');

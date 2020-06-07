@@ -1,0 +1,2 @@
+INSERT INTO webandpr_vvTjz1Bk.w47fa_revslider_static_slides (id, slider_id, params, layers, settings) VALUES (1, 4, '{"background_type":"trans"}', '', '');
+INSERT INTO webandpr_vvTjz1Bk.w47fa_revslider_static_slides (id, slider_id, params, layers, settings) VALUES (2, 8, '{"background_type":"trans"}', '', '');
